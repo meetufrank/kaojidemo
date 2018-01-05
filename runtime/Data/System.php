@@ -2,7 +2,7 @@
 return array (
   'id' => 1,
   'name' => 'MEETUUU.COM',
-  'url' => 'http://www.cltphp.com/',
+  'url' => 'http://kaoji.meetv.com.cn/',
   'title' => 'MEETUUU.COM',
   'key' => 'MEETUUU.COM',
   'des' => 'MEETUUU.COM',
