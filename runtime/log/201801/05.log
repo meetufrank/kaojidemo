@@ -1,0 +1,3145 @@
+---------------------------------------------------------------
+[ 2018-01-05T10:42:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/login/index.html
+[ info ] test.kaoji.com:8080/admin/login/index.html [运行时间：0.092452s][吞吐率：10.82req/s] [内存消耗：2,527.02kb] [文件加载：42]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\www\kaoji\app\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T10:42:06+08:00 ] 127.0.0.1 127.0.0.1 GET /captcha.html
+[ info ] test.kaoji.com:8080/captcha.html [运行时间：0.080636s][吞吐率：12.40req/s] [内存消耗：2,044.29kb] [文件加载：32]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\www\kaoji\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T10:42:06+08:00 ] 127.0.0.1 127.0.0.1 GET /favicon.ico
+[ info ] test.kaoji.com:8080/favicon.ico [运行时间：0.050331s][吞吐率：19.87req/s] [内存消耗：2,035.21kb] [文件加载：33]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T10:42:15+08:00 ] 127.0.0.1 127.0.0.1 GET /captcha.html?id=0.2533520983489652
+[ info ] test.kaoji.com:8080/captcha.html?id=0.2533520983489652 [运行时间：0.054560s][吞吐率：18.33req/s] [内存消耗：2,044.24kb] [文件加载：32]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\www\kaoji\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T10:42:19+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/login/index.html
+[ info ] test.kaoji.com:8080/admin/login/index.html [运行时间：0.184158s][吞吐率：5.43req/s] [内存消耗：4,261.45kb] [文件加载：51]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '45',
+  'accept' => '*/*',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin123',
+  'captcha' => '2nsb',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\www\kaoji\app\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029746s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_admin` [ RunTime:0.065781s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000954s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:42:20+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
+[ info ] test.kaoji.com:8080/admin/index/index.html [运行时间：0.127422s][吞吐率：7.85req/s] [内存消耗：3,981.57kb] [文件加载：58]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\www\kaoji\app\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\index\index.html [ array (
+  0 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002217s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_auth_rule` [ RunTime:0.037084s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_auth_rule` WHERE  (  menustatus=1 ) ORDER BY `sort` [ RunTime:0.001183s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:42:20+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/main.html
+[ info ] test.kaoji.com:8080/admin/index/main.html [运行时间：0.076978s][吞吐率：12.99req/s] [内存消耗：2,877.08kb] [文件加载：51]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ D:\www\kaoji\app\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\index\main.html [ array (
+  0 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002254s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT VERSION() AS ver [ RunTime:0.000522s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:42:24+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/Module/index.html
+[ info ] test.kaoji.com:8080/admin/Module/index.html [运行时间：0.097421s][吞吐率：10.26req/s] [内存消耗：4,095.27kb] [文件加载：56]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Module',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->index[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\module\index.html [ array (
+  0 => 'pattern',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T10:42:24+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/module/index.html
+[ info ] test.kaoji.com:8080/admin/module/index.html [运行时间：0.085423s][吞吐率：11.71req/s] [内存消耗：4,067.95kb] [文件加载：57]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/Module/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->index[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001969s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.016882s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_module` LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY listorder desc LIMIT 0,10 [ RunTime:0.000421s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:42:26+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/module/add.html
+[ info ] test.kaoji.com:8080/admin/module/add.html [运行时间：0.056161s][吞吐率：17.81req/s] [内存消耗：4,097.80kb] [文件加载：56]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/Module/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->add[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\module\form.html [ array (
+  0 => 'pattern',
+  1 => 'title',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T10:42:28+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/module/index.html
+[ info ] test.kaoji.com:8080/admin/module/index.html [运行时间：0.073130s][吞吐率：13.67req/s] [内存消耗：3,873.98kb] [文件加载：54]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->index[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\module\index.html [ array (
+  0 => 'pattern',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T10:42:28+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/module/index.html
+[ info ] test.kaoji.com:8080/admin/module/index.html [运行时间：0.079338s][吞吐率：12.60req/s] [内存消耗：4,067.73kb] [文件加载：57]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->index[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003769s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.011489s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_module` LIMIT 1 [ RunTime:0.001241s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY listorder desc LIMIT 0,10 [ RunTime:0.000904s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:42:29+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/module/field.html?id=1
+[ info ] test.kaoji.com:8080/admin/module/field.html?id=1 [运行时间：0.056948s][吞吐率：17.56req/s] [内存消耗：4,098.74kb] [文件加载：56]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'field',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->field[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\module\field.html [ array (
+  0 => 'pattern',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T10:42:30+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/module/field.html
+[ info ] test.kaoji.com:8080/admin/module/field.html [运行时间：0.175085s][吞吐率：5.71req/s] [内存消耗：3,911.70kb] [文件加载：54]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'field',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '20',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/field.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->field[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002740s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.119509s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=1 ) ORDER BY listorder asc,id asc [ RunTime:0.001191s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:42:31+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/module/fieldAdd/moduleid/1.html
+[ info ] test.kaoji.com:8080/admin/module/fieldAdd/moduleid/1.html [运行时间：0.052548s][吞吐率：19.03req/s] [内存消耗：4,107.84kb] [文件加载：56]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'fieldAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/field.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'moduleid' => '1',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->fieldAdd[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\module\fieldForm.html [ array (
+  0 => 'pattern',
+  1 => 'moduleid',
+  2 => 'title',
+  3 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T10:42:31+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/module/fieldAdd.html?isajax=1&moduleid=1&type=&name=
+[ info ] test.kaoji.com:8080/admin/module/fieldAdd.html?isajax=1&moduleid=1&type=&name= [运行时间：0.095702s][吞吐率：10.45req/s] [内存消耗：4,109.78kb] [文件加载：57]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'fieldAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/fieldAdd/moduleid/1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'isajax' => '1',
+  'moduleid' => '1',
+  'type' => '',
+  'name' => '',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->fieldAdd[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\module\fieldAddType.html [ array (
+  0 => 'pattern',
+  1 => 'isajax',
+  2 => 'moduleid',
+  3 => 'type',
+  4 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002116s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.014567s ]
+[ sql ] [ SQL ] SELECT `name` FROM `clt_module` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000434s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:42:46+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/module/fieldAdd.html?isajax=1&moduleid=1&type=select
+[ info ] test.kaoji.com:8080/admin/module/fieldAdd.html?isajax=1&moduleid=1&type=select [运行时间：0.072652s][吞吐率：13.76req/s] [内存消耗：3,882.55kb] [文件加载：55]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'fieldAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/fieldAdd/moduleid/1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'isajax' => '1',
+  'moduleid' => '1',
+  'type' => 'select',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->fieldAdd[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\module\fieldAddType.html [ array (
+  0 => 'pattern',
+  1 => 'isajax',
+  2 => 'moduleid',
+  3 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011181s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.013110s ]
+[ sql ] [ SQL ] SELECT `name` FROM `clt_module` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000443s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:42:59+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/module/fieldAdd.html?isajax=1&moduleid=1&type=posid
+[ info ] test.kaoji.com:8080/admin/module/fieldAdd.html?isajax=1&moduleid=1&type=posid [运行时间：0.080371s][吞吐率：12.44req/s] [内存消耗：3,882.57kb] [文件加载：55]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'fieldAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/fieldAdd/moduleid/1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'isajax' => '1',
+  'moduleid' => '1',
+  'type' => 'posid',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->fieldAdd[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\module\fieldAddType.html [ array (
+  0 => 'pattern',
+  1 => 'isajax',
+  2 => 'moduleid',
+  3 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011784s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.013701s ]
+[ sql ] [ SQL ] SELECT `name` FROM `clt_module` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000836s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:43:01+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/module/fieldAdd.html?isajax=1&moduleid=1&type=text
+[ info ] test.kaoji.com:8080/admin/module/fieldAdd.html?isajax=1&moduleid=1&type=text [运行时间：0.069825s][吞吐率：14.32req/s] [内存消耗：3,882.65kb] [文件加载：55]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'fieldAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/fieldAdd/moduleid/1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'isajax' => '1',
+  'moduleid' => '1',
+  'type' => 'text',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->fieldAdd[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\module\fieldAddType.html [ array (
+  0 => 'pattern',
+  1 => 'isajax',
+  2 => 'moduleid',
+  3 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012029s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.010715s ]
+[ sql ] [ SQL ] SELECT `name` FROM `clt_module` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000458s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:43:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/module/field/id/1.html
+[ info ] test.kaoji.com:8080/admin/module/field/id/1.html [运行时间：0.049651s][吞吐率：20.14req/s] [内存消耗：3,874.67kb] [文件加载：54]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'field',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/fieldAdd/moduleid/1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->field[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\module\field.html [ array (
+  0 => 'pattern',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T10:43:05+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/module/field.html
+[ info ] test.kaoji.com:8080/admin/module/field.html [运行时间：0.074548s][吞吐率：13.41req/s] [内存消耗：3,911.70kb] [文件加载：54]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'field',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '20',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/field/id/1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->field[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012485s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.012765s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=1 ) ORDER BY listorder asc,id asc [ RunTime:0.000904s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:47:12+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/Category/index.html
+[ info ] test.kaoji.com:8080/admin/Category/index.html [运行时间：0.060579s][吞吐率：16.51req/s] [内存消耗：3,843.91kb] [文件加载：55]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Category->index[ D:\www\kaoji\app\admin\controller\Category.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\category\index.html [ array (
+  0 => 'module',
+  1 => 'categorys',
+  2 => 'title',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T10:47:14+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.210162s][吞吐率：4.76req/s] [内存消耗：4,171.22kb] [文件加载：58]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/Category/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\type_yqtype_list.html [ array (
+  0 => 'fields',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011473s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.147598s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_category` WHERE  `parentid` = 12 LIMIT 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT `atemplate_list` FROM `clt_category` WHERE  `id` = 12 [ RunTime:0.000871s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:47:14+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/type/index.html
+[ info ] test.kaoji.com:8080/admin/type/index.html [运行时间：0.101992s][吞吐率：9.80req/s] [内存消耗：4,071.51kb] [文件加载：58]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '24',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/type/index/catid/12.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011588s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.010330s ]
+[ sql ] [ SQL ] SELECT `id` FROM `clt_category` WHERE  `parentid` = 12 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_type` [ RunTime:0.013613s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_type` [ RunTime:0.011971s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_type` WHERE  `catid` IN (12) LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_type` WHERE  `catid` IN (12) ORDER BY listorder asc,id desc LIMIT 0,10 [ RunTime:0.000785s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:47:16+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.102647s][吞吐率：9.74req/s] [内存消耗：3,945.05kb] [文件加载：56]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\type_yqtype_list.html [ array (
+  0 => 'fields',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011879s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.013897s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_category` WHERE  `parentid` = 12 LIMIT 1 [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SELECT `atemplate_list` FROM `clt_category` WHERE  `id` = 12 [ RunTime:0.000653s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:47:19+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.070249s][吞吐率：14.24req/s] [内存消耗：3,945.53kb] [文件加载：56]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/Category/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\type_yqtype_list.html [ array (
+  0 => 'fields',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011570s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.013077s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_category` WHERE  `parentid` = 12 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT `atemplate_list` FROM `clt_category` WHERE  `id` = 12 [ RunTime:0.000372s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:47:19+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/type/index.html
+[ info ] test.kaoji.com:8080/admin/type/index.html [运行时间：0.102509s][吞吐率：9.76req/s] [内存消耗：4,071.51kb] [文件加载：58]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '24',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/type/index/catid/12.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010756s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.012409s ]
+[ sql ] [ SQL ] SELECT `id` FROM `clt_category` WHERE  `parentid` = 12 [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_type` [ RunTime:0.009257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_type` [ RunTime:0.012885s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_type` WHERE  `catid` IN (12) LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_type` WHERE  `catid` IN (12) ORDER BY listorder asc,id desc LIMIT 0,10 [ RunTime:0.000544s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:47:21+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.070885s][吞吐率：14.11req/s] [内存消耗：3,945.05kb] [文件加载：56]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\type_yqtype_list.html [ array (
+  0 => 'fields',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001790s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.013259s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_category` WHERE  `parentid` = 12 LIMIT 1 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT `atemplate_list` FROM `clt_category` WHERE  `id` = 12 [ RunTime:0.000347s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:47:26+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.076410s][吞吐率：13.09req/s] [内存消耗：3,944.63kb] [文件加载：56]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\type_yqtype_list.html [ array (
+  0 => 'fields',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011214s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.012655s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_category` WHERE  `parentid` = 12 LIMIT 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT `atemplate_list` FROM `clt_category` WHERE  `id` = 12 [ RunTime:0.000405s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:47:27+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/type/index.html
+[ info ] test.kaoji.com:8080/admin/type/index.html [运行时间：0.103196s][吞吐率：9.69req/s] [内存消耗：4,071.51kb] [文件加载：58]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '24',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/type/index/catid/12.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011279s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.010768s ]
+[ sql ] [ SQL ] SELECT `id` FROM `clt_category` WHERE  `parentid` = 12 [ RunTime:0.001112s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_type` [ RunTime:0.010551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_type` [ RunTime:0.011822s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_type` WHERE  `catid` IN (12) LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_type` WHERE  `catid` IN (12) ORDER BY listorder asc,id desc LIMIT 0,10 [ RunTime:0.000481s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:49:28+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.168360s][吞吐率：5.94req/s] [内存消耗：3,945.60kb] [文件加载：56]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\type_yqtype_list.html [ array (
+  0 => 'fields',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104330s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.014315s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_category` WHERE  `parentid` = 12 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT `atemplate_list` FROM `clt_category` WHERE  `id` = 12 [ RunTime:0.000398s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:49:28+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/type/index.html
+[ info ] test.kaoji.com:8080/admin/type/index.html [运行时间：0.087131s][吞吐率：11.48req/s] [内存消耗：3,835.15kb] [文件加载：53]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '24',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/type/index/catid/12.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011685s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.012038s ]
+[ sql ] [ SQL ] SELECT `id` FROM `clt_category` WHERE  `parentid` = 12 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_type` [ RunTime:0.010329s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:49:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.077249s][吞吐率：12.95req/s] [内存消耗：3,945.45kb] [文件加载：56]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\type_yqtype_list.html [ array (
+  0 => 'fields',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011270s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.011028s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_category` WHERE  `parentid` = 12 LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT `atemplate_list` FROM `clt_category` WHERE  `id` = 12 [ RunTime:0.000293s ]
+---------------------------------------------------------------
+[ 2018-01-05T10:49:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/type/index.html
+[ info ] test.kaoji.com:8080/admin/type/index.html [运行时间：0.085738s][吞吐率：11.66req/s] [内存消耗：3,835.15kb] [文件加载：53]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '24',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/type/index/catid/12.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001864s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.013489s ]
+[ sql ] [ SQL ] SELECT `id` FROM `clt_category` WHERE  `parentid` = 12 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_type` [ RunTime:0.014338s ]
+---------------------------------------------------------------
+[ 2018-01-05T11:01:50+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.084069s][吞吐率：11.89req/s] [内存消耗：3,945.17kb] [文件加载：56]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\type_yqtype_list.html [ array (
+  0 => 'fields',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012557s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.011582s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_category` WHERE  `parentid` = 12 LIMIT 1 [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT `atemplate_list` FROM `clt_category` WHERE  `id` = 12 [ RunTime:0.000533s ]
+---------------------------------------------------------------
+[ 2018-01-05T11:01:50+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/type/index.html
+[ info ] test.kaoji.com:8080/admin/type/index.html [运行时间：0.101652s][吞吐率：9.84req/s] [内存消耗：4,071.51kb] [文件加载：58]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '24',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/type/index/catid/12.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010732s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.012360s ]
+[ sql ] [ SQL ] SELECT `id` FROM `clt_category` WHERE  `parentid` = 12 [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_type` [ RunTime:0.009033s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_type` [ RunTime:0.010536s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_type` WHERE  `catid` IN (12) LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_type` WHERE  `catid` IN (12) ORDER BY listorder asc,id desc LIMIT 0,10 [ RunTime:0.000482s ]
+---------------------------------------------------------------
+[ 2018-01-05T11:03:33+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.053717s][吞吐率：18.62req/s] [内存消耗：3,687.25kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T11:03:35+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.051429s][吞吐率：19.44req/s] [内存消耗：3,686.65kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T11:07:49+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.062659s][吞吐率：15.96req/s] [内存消耗：3,824.36kb] [文件加载：57]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1]Undefined class constant 'categorys'[D:\www\kaoji\app\admin\controller\EmptyController.php:14]
+---------------------------------------------------------------
+[ 2018-01-05T11:08:10+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.056133s][吞吐率：17.81req/s] [内存消耗：3,687.36kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T11:08:13+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.058430s][吞吐率：17.11req/s] [内存消耗：3,686.57kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T11:08:44+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.052223s][吞吐率：19.15req/s] [内存消耗：3,690.91kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T11:09:17+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.048652s][吞吐率：20.55req/s] [内存消耗：3,687.33kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T11:09:45+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.044205s][吞吐率：22.62req/s] [内存消耗：3,687.33kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T11:17:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/module/index.html
+[ info ] test.kaoji.com:8080/admin/module/index.html [运行时间：0.053827s][吞吐率：18.58req/s] [内存消耗：3,874.23kb] [文件加载：54]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/field/id/1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->index[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\module\index.html [ array (
+  0 => 'pattern',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T11:17:34+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/module/index.html
+[ info ] test.kaoji.com:8080/admin/module/index.html [运行时间：0.079937s][吞吐率：12.51req/s] [内存消耗：4,067.73kb] [文件加载：57]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->index[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012084s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.010976s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_module` LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY listorder desc LIMIT 0,10 [ RunTime:0.000922s ]
+---------------------------------------------------------------
+[ 2018-01-05T11:17:36+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/module/edit.html?id=2
+[ info ] test.kaoji.com:8080/admin/module/edit.html?id=2 [运行时间：0.261656s][吞吐率：3.82req/s] [内存消耗：3,957.27kb] [文件加载：55]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->edit[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\module\form.html [ array (
+  0 => 'pattern',
+  1 => 'title',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.203534s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.009959s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`name`,`description`,`listfields` FROM `clt_module` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000423s ]
+---------------------------------------------------------------
+[ 2018-01-05T11:17:38+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/module/index.html
+[ info ] test.kaoji.com:8080/admin/module/index.html [运行时间：0.049759s][吞吐率：20.10req/s] [内存消耗：3,874.23kb] [文件加载：54]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/edit.html?id=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->index[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\module\index.html [ array (
+  0 => 'pattern',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T11:17:38+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/module/index.html
+[ info ] test.kaoji.com:8080/admin/module/index.html [运行时间：0.082065s][吞吐率：12.19req/s] [内存消耗：4,067.73kb] [文件加载：57]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->index[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010968s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.014495s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_module` LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY listorder desc LIMIT 0,10 [ RunTime:0.000374s ]
+---------------------------------------------------------------
+[ 2018-01-05T11:17:39+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/module/field.html?id=2
+[ info ] test.kaoji.com:8080/admin/module/field.html?id=2 [运行时间：0.050821s][吞吐率：19.68req/s] [内存消耗：3,874.63kb] [文件加载：54]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'field',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->field[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\module\field.html [ array (
+  0 => 'pattern',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T11:17:39+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/module/field.html
+[ info ] test.kaoji.com:8080/admin/module/field.html [运行时间：0.075155s][吞吐率：13.31req/s] [内存消耗：3,955.88kb] [文件加载：54]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'field',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '20',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/field.html?id=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '2',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->field[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011240s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.010731s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=2 ) ORDER BY listorder asc,id asc [ RunTime:0.000672s ]
+---------------------------------------------------------------
+[ 2018-01-05T11:17:48+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/module/index.html
+[ info ] test.kaoji.com:8080/admin/module/index.html [运行时间：0.048834s][吞吐率：20.48req/s] [内存消耗：3,874.23kb] [文件加载：54]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/field.html?id=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->index[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\module\index.html [ array (
+  0 => 'pattern',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T11:17:48+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/module/index.html
+[ info ] test.kaoji.com:8080/admin/module/index.html [运行时间：0.069708s][吞吐率：14.35req/s] [内存消耗：4,067.73kb] [文件加载：57]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/module/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->index[ D:\www\kaoji\app\admin\controller\Module.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003053s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.011709s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_module` LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY listorder desc LIMIT 0,10 [ RunTime:0.000727s ]
+---------------------------------------------------------------
+[ 2018-01-05T11:17:55+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/Category/index.html
+[ info ] test.kaoji.com:8080/admin/Category/index.html [运行时间：0.047919s][吞吐率：20.87req/s] [内存消耗：3,843.45kb] [文件加载：55]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/type/index/catid/12.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Category->index[ D:\www\kaoji\app\admin\controller\Category.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\category\index.html [ array (
+  0 => 'module',
+  1 => 'categorys',
+  2 => 'title',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T11:17:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/Category/edit/id/12.html
+[ info ] test.kaoji.com:8080/admin/Category/edit/id/12.html [运行时间：0.221192s][吞吐率：4.52req/s] [内存消耗：4,273.75kb] [文件加载：61]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Category',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/Category/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Category->edit[ D:\www\kaoji\app\admin\controller\Category.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\category\edit.html [ array (
+  0 => 'module',
+  1 => 'modulelist',
+  2 => 'categorys',
+  3 => 'record',
+  4 => 'rlist',
+  5 => 'title',
+  6 => 'templates',
+  7 => 'atemplates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011970s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.012350s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`name` FROM `clt_module` [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_auth_group` [ RunTime:0.137126s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_auth_group` [ RunTime:0.000462s ]
+[ error ] [8]Use of undefined constant listtype - assumed 'listtype'[D:\www\kaoji\runtime\temp\f8a9733a862f11957029446d938e42c0.php:254]
+---------------------------------------------------------------
+[ 2018-01-05T11:18:00+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/category/index.html
+[ info ] test.kaoji.com:8080/admin/category/index.html [运行时间：0.048874s][吞吐率：20.46req/s] [内存消耗：3,844.09kb] [文件加载：55]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/Category/edit/id/12.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Category->index[ D:\www\kaoji\app\admin\controller\Category.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\category\index.html [ array (
+  0 => 'module',
+  1 => 'categorys',
+  2 => 'title',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T11:55:16+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.096166s][吞吐率：10.40req/s] [内存消耗：3,945.17kb] [文件加载：56]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\type_yqtype_list.html [ array (
+  0 => 'fields',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012278s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.010751s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_category` WHERE  `parentid` = 12 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT `atemplate_list` FROM `clt_category` WHERE  `id` = 12 [ RunTime:0.000380s ]
+---------------------------------------------------------------
+[ 2018-01-05T11:55:16+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/type/index.html
+[ info ] test.kaoji.com:8080/admin/type/index.html [运行时间：0.110051s][吞吐率：9.09req/s] [内存消耗：4,071.51kb] [文件加载：58]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '24',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/type/index/catid/12.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011403s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.009953s ]
+[ sql ] [ SQL ] SELECT `id` FROM `clt_category` WHERE  `parentid` = 12 [ RunTime:0.001485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_type` [ RunTime:0.010681s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_type` [ RunTime:0.010891s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_type` WHERE  `catid` IN (12) LIMIT 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_type` WHERE  `catid` IN (12) ORDER BY listorder asc,id desc LIMIT 0,10 [ RunTime:0.000566s ]
+---------------------------------------------------------------
+[ 2018-01-05T12:00:33+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.060043s][吞吐率：16.65req/s] [内存消耗：3,690.95kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T12:00:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.048815s][吞吐率：20.49req/s] [内存消耗：3,690.95kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T12:00:35+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.051768s][吞吐率：19.32req/s] [内存消耗：3,690.95kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T12:00:47+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.053543s][吞吐率：18.68req/s] [内存消耗：3,690.39kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T12:00:48+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.048747s][吞吐率：20.51req/s] [内存消耗：3,690.39kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T12:00:48+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.045981s][吞吐率：21.75req/s] [内存消耗：3,690.39kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T12:00:48+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.048194s][吞吐率：20.75req/s] [内存消耗：3,690.39kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T12:00:48+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.049809s][吞吐率：20.08req/s] [内存消耗：3,690.39kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T12:03:36+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.063128s][吞吐率：15.84req/s] [内存消耗：3,687.25kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T12:03:38+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.061217s][吞吐率：16.34req/s] [内存消耗：3,686.65kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T12:08:51+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.051698s][吞吐率：19.34req/s] [内存消耗：3,706.24kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T12:09:10+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.046731s][吞吐率：21.40req/s] [内存消耗：3,687.15kb] [文件加载：52]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-05T14:24:29+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/type/index/catid/12.html
+[ info ] test.kaoji.com:8080/admin/type/index/catid/12.html [运行时间：0.092287s][吞吐率：10.84req/s] [内存消耗：3,945.17kb] [文件加载：56]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\type_yqtype_list.html [ array (
+  0 => 'fields',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011968s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.013051s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_category` WHERE  `parentid` = 12 LIMIT 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT `atemplate_list` FROM `clt_category` WHERE  `id` = 12 [ RunTime:0.000413s ]
+---------------------------------------------------------------
+[ 2018-01-05T14:24:29+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/type/index.html
+[ info ] test.kaoji.com:8080/admin/type/index.html [运行时间：0.103292s][吞吐率：9.68req/s] [内存消耗：4,071.51kb] [文件加载：58]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '24',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://test.kaoji.com:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://test.kaoji.com:8080/admin/type/index/catid/12.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'catid' => '12',
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ D:\www\kaoji\app\admin\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011619s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.012786s ]
+[ sql ] [ SQL ] SELECT `id` FROM `clt_category` WHERE  `parentid` = 12 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_type` [ RunTime:0.009560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_type` [ RunTime:0.009762s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_type` WHERE  `catid` IN (12) LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_type` WHERE  `catid` IN (12) ORDER BY listorder asc,id desc LIMIT 0,10 [ RunTime:0.000521s ]
+---------------------------------------------------------------
+[ 2018-01-05T14:26:46+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/System/system.html
+[ info ] test.kaoji.com:8080/admin/System/system.html [运行时间：0.093423s][吞吐率：10.70req/s] [内存消耗：3,848.49kb] [文件加载：55]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'system',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\System->system[ D:\www\kaoji\app\admin\controller\System.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\system\system.html [ array (
+  0 => 'system',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011670s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_system` [ RunTime:0.010450s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`url`,`title`,`key`,`des`,`bah`,`copyright`,`ads`,`tel`,`email`,`logo` FROM `clt_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001775s ]
+---------------------------------------------------------------
+[ 2018-01-05T14:26:47+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/System/payconf.html
+[ info ] test.kaoji.com:8080/admin/System/payconf.html [运行时间：0.085053s][吞吐率：11.76req/s] [内存消耗：3,851.51kb] [文件加载：55]
+[ info ] [ LANG ] D:\www\kaoji\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'payconf',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'test.kaoji.com:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.9 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://test.kaoji.com:8080/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=805eetncjc6tlg59lhe66p17l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\www\kaoji/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\System->payconf[ D:\www\kaoji\app\admin\controller\System.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\kaoji/app/admin\view\system\payconf.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011536s ] mysql:dbname=kaoji;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_paylist` [ RunTime:0.016248s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_paylist` WHERE  `delete_time` = 0 [ RunTime:0.000566s ]
