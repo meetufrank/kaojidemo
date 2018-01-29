@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-12-25 11:06:54
+Date: 2018-01-17 12:49:46
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -119,7 +119,7 @@ CREATE TABLE `clt_article` (
 -- Records of clt_article
 -- ----------------------------
 INSERT INTO `clt_article` VALUES ('1', '3', '1', 'admin', '你可能忽略掉的后台小功能（一）', 'color:rgb(247, 184, 36);font-weight:normal;', '', '你可能忽略掉的后台小功能（一）', '你可能忽略掉的后台小功能（一）', '<p>刷新：刷新当前标签页</p><p>关闭当前：关闭当前标签页</p><p>关闭其他：除选中的标签页外，关闭其他全部标签页</p><p>关闭所有：关闭全部标签页</p><p><img src=\"/public/uploads/ueditor/image/20170907/1504764868495338.png\" title=\"1504764868495338.png\" alt=\"ac (1).png\"/></p>', '0', '2', '1', '0', '', '0', '0', '261', '1499760262', '1504764870', 'CLTPHP', 'http://www.cltphp.com/');
-INSERT INTO `clt_article` VALUES ('2', '3', '1', 'admin', 'CLTPHP开放式模型设计', 'color:rgb(255, 87, 34);font-weight:bold;', '', 'CLTPHP开放式模型设计', 'CLTPHP内容管理系统采用了区别于传统cms的开放式模型设计，让网站的栏目及内容随这站长的想法而设计、改变。', '<p>　　CLTPHP内容管理系统采用了区别于传统cms的开放式模型设计，让网站的栏目及内容随这站长的想法而设计、改变。</p><p>　　在网站建设中，我们会把不同的内容以不同的方式展示，传统网站得手动建立不同的数据表，然后通过编码，建立不同的后台栏目，在针对不同的栏目添加各自对应的内容，这期间，还得写不同的添加页面来适应各个分类，最后，再把不同的栏目展示到前台。</p><p>　　CLTPHP的解决方式是，通过后台添加模型，建立不同的表，</p><p><img src=\"/public/uploads/ueditor/image/20170907/1504764406381046.png\" title=\"1504764406381046.png\" alt=\"m (1).png\"/></p><p>模型是要和栏目绑定的，不同的栏目就会有不同的内容模型，或者是同一类栏目内容，会归纳到同一模型下。这里产品模型绑定为文章模型。</p><p><img src=\"/public/uploads/ueditor/image/20170907/1504764538131048.png\" title=\"1504764538131048.png\" alt=\"cm (1).png\"/></p><p>一个模型可以理解为一张表，模型字段即使这张表的字段。</p><p><img src=\"/public/uploads/ueditor/image/20170907/1504764618106985.png\" title=\"1504764618106985.png\" alt=\"mf (1).png\"/></p><p>每一个字段最终呈现的方式可能会不一样，所以，字段属性就应用而生了，</p><p><img src=\"/public/uploads/ueditor/image/20170907/1504764686677148.png\" title=\"1504764686677148.png\" alt=\"ef (1).png\"/></p><p>以标题举例，标题会对应自己显示颜色，及是否加粗显示，还有，是否对应一个缩略图。这些通过模型字段的设置，就可以在添加栏目里体现出来，参考下图</p><p><img src=\"/public/uploads/ueditor/image/20170907/1504764760851814.png\" title=\"1504764760851814.png\" alt=\"en (1).png\"/></p><p>通过上图，我们能很清楚知道，这个栏目对应的模型里，标题字段一定设置了标题图片和标题样式。最后，栏目或者某一篇内容可以绑定一个模版，用来前台展示。不同的模版有不同的展示风格，这里，开发者可以扩延出无限的前台展示模版。其规则是，列表页 &nbsp;<strong>表名-list-自定义&nbsp;</strong>&nbsp;内容页 &nbsp;<strong>表名-show-自定义</strong></p>', '0', '2', '1', '0', '', '0', '0', '751', '1499760655', '1504764762', 'CLTPHP', 'http://www.cltphp.com/');
+INSERT INTO `clt_article` VALUES ('2', '3', '1', 'admin', 'CLTPHP开放式模型设计', 'color:rgb(255, 87, 34);font-weight:bold;', '', 'CLTPHP开放式模型设计', 'CLTPHP内容管理系统采用了区别于传统cms的开放式模型设计，让网站的栏目及内容随这站长的想法而设计、改变。', '<p>　　CLTPHP内容管理系统采用了区别于传统cms的开放式模型设计，让网站的栏目及内容随这站长的想法而设计、改变。</p><p>　　在网站建设中，我们会把不同的内容以不同的方式展示，传统网站得手动建立不同的数据表，然后通过编码，建立不同的后台栏目，在针对不同的栏目添加各自对应的内容，这期间，还得写不同的添加页面来适应各个分类，最后，再把不同的栏目展示到前台。</p><p>　　CLTPHP的解决方式是，通过后台添加模型，建立不同的表，</p><p><img src=\"/public/uploads/ueditor/image/20170907/1504764406381046.png\" title=\"1504764406381046.png\" alt=\"m (1).png\"/></p><p>模型是要和栏目绑定的，不同的栏目就会有不同的内容模型，或者是同一类栏目内容，会归纳到同一模型下。这里产品模型绑定为文章模型。</p><p><img src=\"/public/uploads/ueditor/image/20170907/1504764538131048.png\" title=\"1504764538131048.png\" alt=\"cm (1).png\"/></p><p>一个模型可以理解为一张表，模型字段即使这张表的字段。</p><p><img src=\"/public/uploads/ueditor/image/20170907/1504764618106985.png\" title=\"1504764618106985.png\" alt=\"mf (1).png\"/></p><p>每一个字段最终呈现的方式可能会不一样，所以，字段属性就应用而生了，</p><p><img src=\"/public/uploads/ueditor/image/20170907/1504764686677148.png\" title=\"1504764686677148.png\" alt=\"ef (1).png\"/></p><p>以标题举例，标题会对应自己显示颜色，及是否加粗显示，还有，是否对应一个缩略图。这些通过模型字段的设置，就可以在添加栏目里体现出来，参考下图</p><p><img src=\"/public/uploads/ueditor/image/20170907/1504764760851814.png\" title=\"1504764760851814.png\" alt=\"en (1).png\"/></p><p>通过上图，我们能很清楚知道，这个栏目对应的模型里，标题字段一定设置了标题图片和标题样式。最后，栏目或者某一篇内容可以绑定一个模版，用来前台展示。不同的模版有不同的展示风格，这里，开发者可以扩延出无限的前台展示模版。其规则是，列表页 &nbsp;<strong>表名-list-自定义&nbsp;</strong>&nbsp;内容页 &nbsp;<strong>表名-show-自定义</strong></p>', '0', '2', '1', '0', '', '0', '0', '752', '1499760655', '1504764762', 'CLTPHP', 'http://www.cltphp.com/');
 INSERT INTO `clt_article` VALUES ('24', '5', '1', 'admin', 'CLTPHP5.1更新', 'color:rgb(0, 153, 102);font-weight:bold;', '', 'CLTPHP5.1更新', 'CLTPHP5.1更新', '<p>更新内容：</p><p>1.优化双编辑器（编辑器切换不兼容问题，layedit上传不了图片问题，layedit无法编辑问题）</p><p>2.添加自定义标签（参考首页）</p><p>3.修复前台手机兼容问题</p><p><br/></p><p>下载地址：<a target=\"_self\" href=\"http://o95ehky7c.bkt.clouddn.com/cltphp5.1.zip\">点击下载CLTPHP5.1</a></p><p>升级补丁：<a target=\"_self\" href=\"http://o95ehky7c.bkt.clouddn.com/CLTPHP5.0s%E5%8D%87%E7%BA%A75.1%E5%8C%85.zip\">CLTPHP5.0升级5.1</a></p>', '0', '0', '1', '0', '', '0', '0', '186', '1503307064', '1505264247', 'CLTPHP', 'http://www.cltphp.com/');
 INSERT INTO `clt_article` VALUES ('3', '5', '1', 'admin', '关于CLTPHP你错过了什么？', 'color:rgb(247, 184, 36);font-weight:normal;', '', '关于CLTPHP你错过了什么？', '关于CLTPHP你错过了什么？', '<p><a target=\"_blank\" href=\"http://www.cltphp.com\">CLTPHP</a>官方QQ群<a target=\"_blank\" title=\"点击加入\" href=\"http://shang.qq.com/wpa/qunwpa?idkey=003995f61e8bdf5e79e0241b3136b9803ea498833535bbb3aa14004966858349\">229455880</a>，来这里和大家一起讨论更多<a target=\"_blank\" href=\"http://www.cltphp.com\">CLTPHP</a>相关的问题和操作方法，同时可以掌握<a target=\"_self\" href=\"http://www.cltphp.com/home/news/index/catId/49.html\">CLTPHP的最新动态</a>。</p><p>另外，站长会在群里随时更新一些好玩的，或者好用的资源。</p>', '0', '1', '1', '0', '', '0', '0', '310', '1498035408', '1499834839', 'CLTPHP', 'http://www.cltphp.com/');
 INSERT INTO `clt_article` VALUES ('4', '5', '1', 'admin', 'CLTPHP4.0正式发布', 'color:rgb(95, 184, 120);font-weight:bold;', '/uploads/20170905/14d6955eda9e9019ba28f49cb02856b3.jpg', 'CLTPHP4.0正式发布', 'CLTPHP4.0正式发布', '<p><a target=\"_self\" href=\"http://www.cltphp.com/\">CLTPHP4.0</a>正式发布，<a target=\"_self\" href=\"http://www.cltphp.com/\">CLTPHP4.0</a>采用ThinkPHP+Layui+AngularJS实现完成。</p>', '0', '2', '1', '0', '', '0', '0', '793', '1497949408', '1504597814', 'CLTPHP', 'http://www.cltphp.com/');
@@ -140,12 +140,12 @@ INSERT INTO `clt_article` VALUES ('18', '3', '1', 'admin', '关于收费文档�
 INSERT INTO `clt_article` VALUES ('19', '3', '1', 'admin', '关于捐赠的一些说明', 'color:rgb(255, 87, 34);font-weight:bold;', '', '关于捐赠的一些说明', '关于捐赠的一些说明', '<p>首先非常感谢您对我们的支持。</p><p>近期发现，一部分朋友对我们捐赠时，并未留下名称或者其他称呼。</p><p>目前官网只接受微信扫码捐赠，所以，请您务必点击留言，留下您的大名，便于我们做捐赠名的展示。<img src=\"/public/uploads/20170904/a1bb03cea85aafd3bca3287ef3ade719.png\" alt=\"20170904/a1bb03cea85aafd3bca3287ef3ade719.png\"></p>', '0', '0', '1', '0', '', '0', '0', '218', '1501827480', '1504516379', 'CLTPHP', 'http://www.cltphp.com/');
 INSERT INTO `clt_article` VALUES ('20', '6', '1', 'admin', 'PHP格式化字节大小', 'color:hsv(0, 0%, 0%);font-weight:bold;', '', 'PHP格式化字节大小', 'PHP格式化字节大小', '<pre><span>/**<br></span><span> * PHP格式化字节大小<br></span><span> * </span><span>@param  </span><span>number $size      字节数<br></span><span> * </span><span>@param  </span><span>string $delimiter 数字和单位分隔符<br></span><span> * </span><span>@return </span><span>string            格式化后的带单位的大小<br></span><span> */<br></span><span>function </span><span>format_bytes</span><span>(</span><span>$size</span><span>, </span><span>$delimiter </span><span>= </span><span>\'\'</span><span>) {<br></span><span>    </span><span>$units </span><span>= </span><span>array</span><span>(</span><span>\'B\'</span><span>, </span><span>\'KB\'</span><span>, </span><span>\'MB\'</span><span>, </span><span>\'GB\'</span><span>, </span><span>\'TB\'</span><span>, </span><span>\'PB\'</span><span>)</span><span>;<br></span><span>    </span><span>for </span><span>(</span><span>$i </span><span>= </span><span>0</span><span>; </span><span>$size </span><span>&gt;= </span><span>1024 </span><span>&amp;&amp; </span><span>$i </span><span>&lt; </span><span>5</span><span>; </span><span>$i</span><span>++) </span><span>$size </span><span>/= </span><span>1024</span><span>;<br></span><span>    </span><span>return </span><span>round(</span><span>$size</span><span>, </span><span>2</span><span>) . </span><span>$delimiter </span><span>. </span><span>$units</span><span>[</span><span>$i</span><span>]</span><span>;<br></span><span>}</span></pre>', '0', '1', '1', '0', '', '0', '0', '131', '1502067689', '1502067893', 'CLTPHP', 'http://www.cltphp.com/');
 INSERT INTO `clt_article` VALUES ('21', '5', '1', 'admin', 'CLTPHP4.5发布', 'color:rgb(0, 153, 102);font-weight:bold;', '', 'CLTPHP4.5发布', 'CLTPHP4.5发布', '<p>1.更新权限功能</p><p>2.增加微信关注回复和默认回复</p><p>3.增加后台页面过度效果</p><p>4.后台部分功能代码优化</p>', '0', '2', '1', '0', '', '0', '0', '159', '1502067980', '1502422491', 'CLTPHP', 'http://www.cltphp.com/');
-INSERT INTO `clt_article` VALUES ('22', '5', '1', 'admin', 'CLTPHP5.0发布', 'color:rgb(255, 87, 34);font-weight:bold;', '', 'CLTPHP5.0发布', 'CLTPHP5.0发布', '<p>CLTPHP5.0更新内容</p><p>1.增加前台会员模块，支持QQ登录注册</p><p>2.增加后台邮件发送配置</p><p>3.增加后台QQ登录配置</p><p>4.增加后台富文本编辑器选择（<span>layedit，</span><span>UEditor</span>）</p><p>5.增加后台上传logo</p><p>6.增加微信关注回复及默认回复</p><p>7.优化后台部分语言功能</p><p>8.简单实现home模块路由配置</p><p>9.增加home模块缓存机制</p><p>10.修复后台管理员无法添加的bug</p><p>11.修复4.5版本模版管理.html无法编辑的bug</p><p>12.更多细节修改及bug</p><p>下载地址：<a target=\"_self\" href=\"http://o95ehky7c.bkt.clouddn.com/CLTPHP5.0.zip\">CLTPHP5.0</a></p>', '0', '2', '1', '0', '', '0', '0', '591', '1502421726', '1503365682', 'CLTPHP', 'http://www.cltphp.com/');
+INSERT INTO `clt_article` VALUES ('22', '5', '1', 'admin', 'CLTPHP5.0发布', 'color:rgb(255, 87, 34);font-weight:bold;', '', 'CLTPHP5.0发布', 'CLTPHP5.0发布', '<p>CLTPHP5.0更新内容</p><p>1.增加前台会员模块，支持QQ登录注册</p><p>2.增加后台邮件发送配置</p><p>3.增加后台QQ登录配置</p><p>4.增加后台富文本编辑器选择（<span>layedit，</span><span>UEditor</span>）</p><p>5.增加后台上传logo</p><p>6.增加微信关注回复及默认回复</p><p>7.优化后台部分语言功能</p><p>8.简单实现home模块路由配置</p><p>9.增加home模块缓存机制</p><p>10.修复后台管理员无法添加的bug</p><p>11.修复4.5版本模版管理.html无法编辑的bug</p><p>12.更多细节修改及bug</p><p>下载地址：<a target=\"_self\" href=\"http://o95ehky7c.bkt.clouddn.com/CLTPHP5.0.zip\">CLTPHP5.0</a></p>', '0', '2', '1', '0', '', '0', '0', '592', '1502421726', '1503365682', 'CLTPHP', 'http://www.cltphp.com/');
 INSERT INTO `clt_article` VALUES ('23', '3', '1', 'admin', '清除缓存和添加字段的错误修正方法', 'color:;font-weight:normal;', '', '清除缓存和添加字段的错误修正方法', '清除缓存和添加字段的错误修正方法', '<p>问题：</p><pre>Deprecated:&nbsp;Automatically&nbsp;populating&nbsp;$HTTP_RAW_POST_DATA&nbsp;is&nbsp;deprecated&nbsp;and&nbsp;will&nbsp;be&nbsp;removed&nbsp;in&nbsp;a&nbsp;future&nbsp;version.&nbsp;To&nbsp;avoid&nbsp;this&nbsp;warning&nbsp;set&nbsp;&#39;always_populate_raw_post_data&#39;&nbsp;to&nbsp;&#39;-1&#39;&nbsp;in&nbsp;php.ini&nbsp;and&nbsp;use&nbsp;the&nbsp;php://input&nbsp;stream&nbsp;instead.&nbsp;in&nbsp;Unknown&nbsp;on&nbsp;line&nbsp;0</pre><p><br/></p><p>修正方法：</p><p>去掉php.in配置文件always_populate_raw_post_data前面的分号</p><p><br/></p><p><br/></p>', '0', '0', '1', '0', '', '0', '0', '78', '1502761583', '1504763357', 'CLTPHP', 'http://www.cltphp.com/');
-INSERT INTO `clt_article` VALUES ('25', '5', '1', 'admin', 'CLTPHP手册更新自定义标签', 'color:;font-weight:normal;', '', 'CLTPHP手册更新自定义标签', 'CLTPHP手册更新自定义标签', '<p>CLTPHP手册更新自定义标签，文档详细讲述了 {clt:list}{/clt:list} 和 {clt:info}{/clt:info} 两个标签的参数和调用方法。</p>', '0', '1', '1', '0', '1', '0', '0', '119', '1503365502', '1512011877', 'CLTPHP', 'http://www.cltphp.com/');
+INSERT INTO `clt_article` VALUES ('25', '5', '1', 'admin', 'CLTPHP手册更新自定义标签', 'color:;font-weight:normal;', '', 'CLTPHP手册更新自定义标签', 'CLTPHP手册更新自定义标签', '<p>CLTPHP手册更新自定义标签，文档详细讲述了 {clt:list}{/clt:list} 和 {clt:info}{/clt:info} 两个标签的参数和调用方法。</p>', '0', '1', '1', '0', '1', '0', '0', '120', '1503365502', '1512011877', 'CLTPHP', 'http://www.cltphp.com/');
 INSERT INTO `clt_article` VALUES ('36', '5', '1', 'admin', 'CLTPHP5.1.1更新', 'color:rgb(0, 153, 102);font-weight:bold;', '', 'CLTPHP5.1.1更新', 'CLTPHP5.1.1更新', '<p style=\"box-sizing: border-box; border: 0px; font-stretch: inherit; font-size: 14px; line-height: 24px; font-family: &#39;Microsoft yahei&#39;, Arial, Tahoma, Verdana; vertical-align: baseline; margin-top: 0px; margin-bottom: 0px; padding: 0px 0px 20px; color: rgb(151, 151, 151); white-space: normal; background-color: rgb(255, 255, 255);\">更新内容</p><p style=\"box-sizing: border-box; border: 0px; font-stretch: inherit; font-size: 14px; line-height: 24px; font-family: &#39;Microsoft yahei&#39;, Arial, Tahoma, Verdana; vertical-align: baseline; margin-top: 0px; margin-bottom: 0px; padding: 0px 0px 20px; color: rgb(151, 151, 151); white-space: normal; background-color: rgb(255, 255, 255);\">1、前台自定义标签完善</p><p style=\"box-sizing: border-box; border: 0px; font-stretch: inherit; font-size: 14px; line-height: 24px; font-family: &#39;Microsoft yahei&#39;, Arial, Tahoma, Verdana; vertical-align: baseline; margin-top: 0px; margin-bottom: 0px; padding: 0px 0px 20px; color: rgb(151, 151, 151); white-space: normal; background-color: rgb(255, 255, 255);\">2、自定义分页，优化了系统分页（为了保持框架文件的纯净度，并没有改动TP原有分页代码）</p><p style=\"box-sizing: border-box; border: 0px; font-stretch: inherit; font-size: 14px; line-height: 24px; font-family: &#39;Microsoft yahei&#39;, Arial, Tahoma, Verdana; vertical-align: baseline; margin-top: 0px; margin-bottom: 0px; padding: 0px 0px 20px; color: rgb(151, 151, 151); white-space: normal; background-color: rgb(255, 255, 255);\">3、更新对应文档</p><p style=\"box-sizing: border-box; border: 0px; font-stretch: inherit; font-size: 14px; line-height: 24px; font-family: &#39;Microsoft yahei&#39;, Arial, Tahoma, Verdana; vertical-align: baseline; margin-top: 0px; margin-bottom: 0px; padding: 0px 0px 20px; color: rgb(151, 151, 151); white-space: normal; background-color: rgb(255, 255, 255);\">下载地址：<a target=\"_self\" href=\"http://qiniu.cltphp.com/cltphp5.1.1.zip\" style=\"box-sizing: border-box; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; margin: 0px; padding: 0px; outline: 0px; color: rgb(146, 208, 80); text-decoration: none;\"><span style=\"color: rgb(146, 208, 80);\">CLTPHP5.1.1下载</span></a></p><p style=\"box-sizing: border-box; border: 0px; font-stretch: inherit; font-size: 14px; line-height: 24px; font-family: &#39;Microsoft yahei&#39;, Arial, Tahoma, Verdana; vertical-align: baseline; margin-top: 0px; margin-bottom: 0px; padding: 0px 0px 20px; color: rgb(151, 151, 151); white-space: normal; background-color: rgb(255, 255, 255);\">更新包下载：<a target=\"_self\" href=\"http://qiniu.cltphp.com/CLTPHP5.1%E5%88%B05.1.1%E5%8D%87%E7%BA%A7.zip\" style=\"box-sizing: border-box; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; margin: 0px; padding: 0px; outline: 0px; color: rgb(146, 208, 80); text-decoration: none;\"><span style=\"color: rgb(146, 208, 80);\">CLTPHP5.1到5.1.1更新</span></a></p><p><br/></p>', '0', '0', '1', '0', '1,2', '0', '0', '31', '1504765025', '1512011897', 'CLTPHP', 'http://www.cltphp.com/');
 INSERT INTO `clt_article` VALUES ('37', '5', '1', 'admin', 'CLTPHP5.1.2发布', 'color:rgb(0, 153, 102);font-weight:bold;', '', 'CLTPHP5.1.2发布', 'CLTPHP5.1.2发布', '<p>更新内容</p><p>1、<strong>CLTPHP</strong>核心框架thinkphp升级</p><p>2、分类，广告，友链的前后台缓存机制</p><p>下载地址：<strong style=\"color: rgb(118, 146, 60); text-decoration: none;\"><span style=\"color: rgb(118, 146, 60);\"><a href=\"http://qiniu.cltphp.com/cltphp5.1.2.zip\" target=\"_self\" title=\"CLTPHP5.1.2下载\" style=\"color: rgb(118, 146, 60); text-decoration: none;\">CLTPHP5.1.2</a></span></strong></p><p><strong style=\"color: rgb(118, 146, 60); text-decoration: none;\"><br/></strong></p><p><span style=\"color: rgb(84, 141, 212);\">2017-09-13&nbsp;10:38:36</span></p><p><a href=\"http://qiniu.cltphp.com/5.1.2.1%E8%A1%A5%E4%B8%81.zip\" target=\"_self\" title=\"CLTPHP5.1.2.1补丁\" style=\"text-decoration: none;\"><strong style=\"color: rgb(118, 146, 60); text-decoration: none;\"><strong style=\"white-space: normal; color: rgb(118, 146, 60);\">CLTPHP5.1.2.1补丁</strong></strong><strong style=\"color: rgb(118, 146, 60); text-decoration: none;\"><strong style=\"white-space: normal; color: rgb(118, 146, 60);\"></strong></strong></a></p><p><strong style=\"color: rgb(118, 146, 60); text-decoration: none;\"><br/></strong></p><p><br/></p><p><br/></p>', '0', '1', '1', '0', '3', '0', '0', '42', '1505264091', '1512012639', 'CLTPHP', 'http://www.cltphp.com/');
-INSERT INTO `clt_article` VALUES ('38', '3', '1', 'admin', '关于CLTPHP的一些琐碎事', 'color:rgb(51, 51, 153);font-weight:bold;', '', '关于CLTPHP的一些琐碎事', '关于CLTPHP的一些琐碎事', '<p><a href=\"http://demo.cltphp.com\" target=\"_self\" title=\"CLTPHP演示站\">CLTPHP演示站</a>的后台用户名：admin &nbsp;密码：admin123</p><p><br/></p><p>版本更新包的后台用户名：admin &nbsp;密码：admin123</p><p><br/></p><p><span style=\"color: rgb(149, 55, 52);\">如果没有意外（睡眼忪惺）的时候，以上永久不变。</span></p>', '0', '1', '1', '0', '1', '10', '0', '28', '1505264319', '1512013527', 'CLTPHP', 'http://www.cltphp.com/');
+INSERT INTO `clt_article` VALUES ('38', '3', '1', 'admin', '关于CLTPHP的一些琐碎事', 'color:rgb(51, 51, 153);font-weight:bold;', '', '关于CLTPHP的一些琐碎事', '关于CLTPHP的一些琐碎事', '<p><a href=\"http://demo.cltphp.com\" target=\"_self\" title=\"CLTPHP演示站\">CLTPHP演示站</a>的后台用户名：admin &nbsp;密码：admin123</p><p><br/></p><p>版本更新包的后台用户名：admin &nbsp;密码：admin123</p><p><br/></p><p><span style=\"color: rgb(149, 55, 52);\">如果没有意外（睡眼忪惺）的时候，以上永久不变。</span></p>', '0', '1', '1', '0', '1', '10', '0', '30', '1505264319', '1512013527', 'CLTPHP', 'http://www.cltphp.com/');
 
 -- ----------------------------
 -- Table structure for clt_auth_group
@@ -186,7 +186,7 @@ CREATE TABLE `clt_auth_rule` (
   `zt` int(1) DEFAULT NULL,
   `menustatus` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=282 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=288 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of clt_auth_rule
@@ -290,6 +290,7 @@ INSERT INTO `clt_auth_rule` VALUES ('205', 'Debris/add', '操作-添加', '1', '
 INSERT INTO `clt_auth_rule` VALUES ('206', 'Wechat', '微信管理', '1', '1', '0', 'icon-bubbles2', '', '0', '7', '1487063570', '0', '1');
 INSERT INTO `clt_auth_rule` VALUES ('207', 'Wechat/config', '公众号管理', '1', '1', '0', '', '', '206', '1', '1487063705', '0', '1');
 INSERT INTO `clt_auth_rule` VALUES ('208', 'Wechat/menu', '菜单管理', '1', '1', '0', '', '', '206', '2', '1487063765', '0', '1');
+INSERT INTO `clt_auth_rule` VALUES ('285', 'PayOrder/del', '删除订单', '1', '1', '0', '', '', '284', '50', '1515555199', null, '1');
 INSERT INTO `clt_auth_rule` VALUES ('277', 'Wechat/materialmessage', '消息素材', '1', '1', '0', '', '', '206', '50', '1513849300', null, '1');
 INSERT INTO `clt_auth_rule` VALUES ('212', 'Wechat/weixin', '操作-设置', '1', '1', '0', '', '', '207', '1', '1487064541', '0', '0');
 INSERT INTO `clt_auth_rule` VALUES ('213', 'Wechat/addMenu', '操作-添加', '1', '1', '0', '', '', '208', '1', '1487149151', '0', '0');
@@ -320,11 +321,13 @@ INSERT INTO `clt_auth_rule` VALUES ('262', 'Wechat/createMenu', '操作-生成�
 INSERT INTO `clt_auth_rule` VALUES ('281', 'Wechat/replay', '回复设置', '1', '1', '0', '', '', '206', '50', '1513849449', null, '1');
 INSERT INTO `clt_auth_rule` VALUES ('279', 'Wechat/editText', '操作-编辑', '1', '1', '0', '', '', '277', '50', '1513849382', null, '1');
 INSERT INTO `clt_auth_rule` VALUES ('265', 'Donation/index', '捐赠管理', '1', '1', '0', '', '', '28', '5', '1498101716', '0', '1');
+INSERT INTO `clt_auth_rule` VALUES ('284', 'PayOrder/index', '支付订单管理', '1', '1', '0', '', '', '28', '1', '1515554860', null, '1');
 INSERT INTO `clt_auth_rule` VALUES ('267', 'Plugin/index', '插件管理', '1', '1', '1', 'icon-power-cord', '', '0', '8', '1501466560', '0', '1');
 INSERT INTO `clt_auth_rule` VALUES ('269', 'Plugin/login', '登录插件', '1', '1', '1', '', '', '267', '1', '1501466732', '0', '1');
 INSERT INTO `clt_auth_rule` VALUES ('270', 'System/email', '邮箱配置', '1', '1', '0', '', '', '1', '2', '1502331829', '0', '1');
 INSERT INTO `clt_auth_rule` VALUES ('272', 'Debris/type', '碎片分类', '1', '1', '1', '', '', '196', '3', '1504082720', '0', '1');
 INSERT INTO `clt_auth_rule` VALUES ('275', 'System/payconf', '支付配置', '1', '1', '0', '', '', '1', '3', '1512974195', null, '1');
+INSERT INTO `clt_auth_rule` VALUES ('287', 'PayOrder/delall', '删除全部', '1', '1', '0', '', '', '284', '50', '1515555281', null, '1');
 
 -- ----------------------------
 -- Table structure for clt_category
@@ -358,25 +361,51 @@ CREATE TABLE `clt_category` (
   `listtype` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `lang` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `atemplate_list` varchar(40) NOT NULL,
-  `catetype` tinyint(2) NOT NULL DEFAULT '1' COMMENT '//栏目归属',
   PRIMARY KEY (`id`),
   KEY `parentid` (`parentid`),
   KEY `listorder` (`listorder`)
-) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of clt_category
 -- ----------------------------
-INSERT INTO `clt_category` VALUES ('1', '最新动态', 'news', '', '0', '2', 'article', '0', '1,5,6', '0', '最新动态', '最新动态', '最新动态', '4', '0', '1', '0', '', '1', '', 'article-list', 'article-show', '0', '1,2,3', '0', '0', '', '1');
-INSERT INTO `clt_category` VALUES ('4', '系统操作', 'system', '', '0', '3', 'picture', '0', '4', '0', 'CLTPHP系统操作', 'CLTPHP系统操作,CLTPHP,CLTPHP内容管理系统', 'CLTPHP系统操作,CLTPHP,CLTPHP内容管理系统', '2', '0', '1', '0', '', '0', '', '', '', '0', '1,2,3', '0', '0', '', '1');
-INSERT INTO `clt_category` VALUES ('3', '产品服务', 'services', '', '0', '2', 'article', '0', '3', '0', '产品服务-CLTPHP', '产品服务,CLTPHP,CLTPHP内容管理系统', '产品服务', '1', '0', '1', '0', '', '0', '', '', '', '15', '1,2,3', '0', '0', '', '1');
-INSERT INTO `clt_category` VALUES ('8', '联系我们', 'contact', '', '0', '1', 'page', '0', '8', '0', '联系我们', '联系我们', '联系我们', '7', '0', '1', '0', '', '0', '', 'page_show_contace', 'page_show_contace', '0', '', '0', '0', '', '1');
-INSERT INTO `clt_category` VALUES ('7', '精英团队', 'team', '', '0', '6', 'team', '0', '7', '0', '精英团队', '精英团队', '精英团队', '5', '0', '1', '0', '', '0', '', '', '', '0', '', '0', '0', '', '1');
-INSERT INTO `clt_category` VALUES ('5', 'CLTPHP动态', 'news', 'news/', '1', '2', 'article', '0,1', '5', '0', 'CLTPHP动态', 'CLTPHP动态', 'CLTPHP动态', '0', '0', '1', '0', '', '0', '', '', '', '5', '1,2,3', '0', '0', '', '1');
-INSERT INTO `clt_category` VALUES ('6', '相关知识 ', 'news', 'news/', '1', '2', 'article', '0,1', '6', '0', 'CLTPHP相关知识', 'CLTPHP相关知识', 'CLTPHP相关知识', '0', '0', '1', '0', '', '0', '', '', '', '0', '', '0', '0', '', '1');
-INSERT INTO `clt_category` VALUES ('11', '类型管理', 'type', '', '0', '11', 'type', '0', '11,12,13', '0', '类型管理', '类型', '', '0', '0', '0', '0', '/uploads/20171220/13868fa7e1498f288e382b6d6e436012.jpg', '1', '', '', '', '0', '', '0', '0', '', '2');
-INSERT INTO `clt_category` VALUES ('12', '乐器类型', 'yqtype', 'type/', '11', '11', 'type', '0,11', '12', '0', '频道类型', '频道，类型', '分类频道', '0', '0', '0', '0', '', '0', '', '', '', '0', '', '0', '0', 'type_yqtype_list', '2');
-INSERT INTO `clt_category` VALUES ('13', '筛选类型', 'sxtype', 'type/', '11', '11', 'type', '0,11', '13', '0', '筛选类型', '测试', '测试', '0', '0', '0', '0', '', '0', '', '', '', '0', '', '0', '0', '', '2');
+INSERT INTO `clt_category` VALUES ('1', '最新动态', 'news', '', '0', '2', 'article', '0', '1,5,6', '0', '最新动态', '最新动态', '最新动态', '4', '0', '1', '0', '', '1', '', 'article-list', 'article-show', '0', '1,2,3', '0', '0', '');
+INSERT INTO `clt_category` VALUES ('4', '系统操作', 'system', '', '0', '3', 'picture', '0', '4', '0', 'CLTPHP系统操作', 'CLTPHP系统操作,CLTPHP,CLTPHP内容管理系统', 'CLTPHP系统操作,CLTPHP,CLTPHP内容管理系统', '2', '0', '1', '0', '', '0', '', '', '', '0', '1,2,3', '0', '0', '');
+INSERT INTO `clt_category` VALUES ('3', '产品服务', 'services', '', '0', '2', 'article', '0', '3', '0', '产品服务-CLTPHP', '产品服务,CLTPHP,CLTPHP内容管理系统', '产品服务', '1', '0', '1', '0', '', '0', '', '', '', '15', '1,2,3', '0', '0', '');
+INSERT INTO `clt_category` VALUES ('8', '联系我们', 'contact', '', '0', '1', 'page', '0', '8', '0', '联系我们', '联系我们', '联系我们', '7', '0', '1', '0', '', '0', '', 'page_show_contace', 'page_show_contace', '0', '', '0', '0', '');
+INSERT INTO `clt_category` VALUES ('7', '精英团队', 'team', '', '0', '6', 'team', '0', '7', '0', '精英团队', '精英团队', '精英团队', '5', '0', '1', '0', '', '0', '', '', '', '0', '', '0', '0', '');
+INSERT INTO `clt_category` VALUES ('5', 'CLTPHP动态', 'news', 'news/', '1', '2', 'article', '0,1', '5', '0', 'CLTPHP动态', 'CLTPHP动态', 'CLTPHP动态', '0', '0', '1', '0', '', '0', '', '', '', '5', '1,2,3', '0', '0', '');
+INSERT INTO `clt_category` VALUES ('6', '相关知识 ', 'news', 'news/', '1', '2', 'article', '0,1', '6', '0', 'CLTPHP相关知识', 'CLTPHP相关知识', 'CLTPHP相关知识', '0', '0', '1', '0', '', '0', '', '', '', '0', '', '0', '0', '');
+INSERT INTO `clt_category` VALUES ('11', '类型管理', 'type', '', '0', '11', 'type', '0', '11,12,15', '0', '类型管理', '类型', '', '0', '0', '0', '0', '/uploads/20171220/13868fa7e1498f288e382b6d6e436012.jpg', '1', '', '', '', '0', '', '0', '0', '');
+INSERT INTO `clt_category` VALUES ('12', '乐器列表', 'yqtype', 'type/', '11', '11', 'type', '0,11', '12', '0', '频道类型', '频道，类型', '分类频道', '0', '0', '0', '0', '', '0', '', '', '', '0', '', '0', '0', 'type_yqtype_list');
+INSERT INTO `clt_category` VALUES ('15', '课程类型管理', 'calsstype', 'type/', '11', '15', 'classtype', '0,11', '15', '0', '', '', '', '0', '0', '0', '0', '', '0', '', '', '', '0', '', '0', '0', '');
+
+-- ----------------------------
+-- Table structure for clt_classtype
+-- ----------------------------
+DROP TABLE IF EXISTS `clt_classtype`;
+CREATE TABLE `clt_classtype` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(80) NOT NULL DEFAULT '',
+  `title_style` varchar(225) NOT NULL DEFAULT '',
+  `thumb` varchar(225) NOT NULL DEFAULT '',
+  `status` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `userid` int(8) unsigned NOT NULL DEFAULT '0',
+  `username` varchar(40) NOT NULL DEFAULT '',
+  `listorder` int(10) unsigned NOT NULL DEFAULT '0',
+  `createtime` int(11) unsigned NOT NULL DEFAULT '0',
+  `updatetime` int(11) unsigned NOT NULL DEFAULT '0',
+  `lang` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `template` varchar(40) NOT NULL DEFAULT '',
+  `catid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of clt_classtype
+-- ----------------------------
+INSERT INTO `clt_classtype` VALUES ('1', '流行钢琴', 'color:;font-weight:normal;', '', '1', '1', 'admin', '0', '1515655042', '0', '0', '0', '15');
+INSERT INTO `clt_classtype` VALUES ('2', '沉浸式乐队课程', 'color:;font-weight:normal;', '', '1', '1', 'admin', '0', '1515655243', '0', '0', '0', '15');
 
 -- ----------------------------
 -- Table structure for clt_config
@@ -564,7 +593,7 @@ CREATE TABLE `clt_field` (
   `status` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `issystem` tinyint(1) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=122 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=139 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of clt_field
@@ -647,12 +676,17 @@ INSERT INTO `clt_field` VALUES ('75', '2', 'copyfrom', '来源', '', '0', '0', '
 INSERT INTO `clt_field` VALUES ('76', '2', 'fromlink', '来源网址', '', '0', '0', '0', 'defaul', '', 'fromlink', 'text', 'array (\n  \'default\' => \'http://www.cltphp.com/\',\n  \'ispassword\' => \'0\',\n  \'fieldtype\' => \'varchar\',\n)', '0', '', '9', '1', '0');
 INSERT INTO `clt_field` VALUES ('83', '3', 'vido', '视频', '', '0', '0', '0', 'defaul', '', 'vido', 'file', 'array (\n  \'upload_allowext\' => \'zip|rar|doc|ppt|mp4\',\n)', '0', '', '0', '1', '0');
 INSERT INTO `clt_field` VALUES ('114', '11', 'catid', '类型归属', '', '1', '0', '0', 'number', '类型归属选择错误', 'catid', 'catid', '', '0', '', '0', '1', '0');
+INSERT INTO `clt_field` VALUES ('135', '15', 'template', '模板', '', '0', '0', '0', '', '', '', 'template', '', '1', '', '99', '0', '1');
 INSERT INTO `clt_field` VALUES ('113', '11', 'status', '状态', '', '0', '0', '0', '', '', '', 'radio', 'array (\n  \'options\' => \'发布|1\r\n定时发布|0\',\n  \'fieldtype\' => \'tinyint\',\n  \'numbertype\' => \'1\',\n  \'labelwidth\' => \'75\',\n  \'default\' => \'1\',\n)', '1', '', '98', '1', '1');
 INSERT INTO `clt_field` VALUES ('112', '11', 'template', '模板', '', '0', '0', '0', '', '', '', 'template', '', '1', '', '99', '1', '1');
 INSERT INTO `clt_field` VALUES ('111', '11', 'createtime', '发布时间', '', '1', '0', '0', 'date', '', '', 'datetime', '', '1', '', '97', '1', '1');
 INSERT INTO `clt_field` VALUES ('109', '11', 'title', '乐器名称', '', '1', '1', '80', 'defaul', '标题必须为1-80个字符', 'title', 'title', 'array (\n  \'thumb\' => \'1\',\n  \'style\' => \'1\',\n)', '1', '', '1', '1', '1');
 INSERT INTO `clt_field` VALUES ('110', '11', 'hits', '点击次数', '', '0', '0', '8', '', '', '', 'number', 'array (\n  \'size\' => \'10\',\n  \'numbertype\' => \'1\',\n  \'decimaldigits\' => \'0\',\n  \'default\' => \'0\',\n)', '1', '', '8', '0', '0');
+INSERT INTO `clt_field` VALUES ('136', '15', 'status', '状态', '', '0', '0', '0', '', '', '', 'radio', 'array (\n  \'options\' => \'发布|1\r\n定时发布|0\',\n  \'fieldtype\' => \'tinyint\',\n  \'numbertype\' => \'1\',\n  \'labelwidth\' => \'75\',\n  \'default\' => \'1\',\n)', '1', '', '98', '1', '1');
+INSERT INTO `clt_field` VALUES ('132', '15', 'title', '课程类型名称', '', '1', '1', '80', 'defaul', '标题必须为1-80个字符', 'title', 'title', 'array (\n  \'thumb\' => \'1\',\n  \'style\' => \'1\',\n)', '1', '', '2', '1', '1');
 INSERT INTO `clt_field` VALUES ('121', '11', 'kj_options', '乐器分级', '', '1', '0', '0', 'defaul', '', 'kj_options', 'checkbox', 'array (\n  \'options\' => \'一级|1\n二级|2\n演奏级|3\',\n  \'fieldtype\' => \'varchar\',\n  \'numbertype\' => \'1\',\n  \'default\' => \'\',\n)', '0', '', '1', '1', '0');
+INSERT INTO `clt_field` VALUES ('138', '15', 'catid', '栏目归属', '', '1', '0', '0', 'defaul', '', 'catid', 'catid', '', '0', '', '0', '1', '0');
+INSERT INTO `clt_field` VALUES ('134', '15', 'createtime', '发布时间', '', '1', '0', '0', 'date', '', '', 'datetime', '', '1', '', '97', '1', '1');
 
 -- ----------------------------
 -- Table structure for clt_link
@@ -681,24 +715,6 @@ INSERT INTO `clt_link` VALUES ('13', 'CLTPHP相关知识', 'http://cltphp.com/ne
 INSERT INTO `clt_link` VALUES ('15', '有你有我影视', 'http://www.ynywo.com/', '0', '', '6', '1501030917', '1');
 
 -- ----------------------------
--- Table structure for clt_lmcate
--- ----------------------------
-DROP TABLE IF EXISTS `clt_lmcate`;
-CREATE TABLE `clt_lmcate` (
-  `lmtype_id` tinyint(3) NOT NULL AUTO_INCREMENT COMMENT '//栏目归属id',
-  `lmtype_name` varchar(30) NOT NULL COMMENT '//归属名称',
-  `listorder` int(11) NOT NULL DEFAULT '0',
-  `style` varchar(255) DEFAULT NULL COMMENT '//样式',
-  PRIMARY KEY (`lmtype_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of clt_lmcate
--- ----------------------------
-INSERT INTO `clt_lmcate` VALUES ('1', '导航管理', '0', 'style=\"color:blue;\"');
-INSERT INTO `clt_lmcate` VALUES ('2', '应用管理', '1', 'style=\"color:green;\"');
-
--- ----------------------------
 -- Table structure for clt_message
 -- ----------------------------
 DROP TABLE IF EXISTS `clt_message`;
@@ -719,8 +735,6 @@ CREATE TABLE `clt_message` (
 -- Records of clt_message
 -- ----------------------------
 INSERT INTO `clt_message` VALUES ('28', '关于广告 ', '', '1502875841', '0', '113.16.147.215', '我尝试修改Ad  但是要修改的好多  站长大大能出一个不被广告插件屏蔽的版本么 或者文章  ', '鸡蛋', '406811064@qq.com');
-INSERT INTO `clt_message` VALUES ('26', '111', '', '1502855521', '0', '119.126.28.3', '1111', '小程序', 'ok131325@163.com');
-INSERT INTO `clt_message` VALUES ('24', '111', '', '1502854875', '0', '119.126.30.139', 'qwwww', '1111', '114114114@163.com');
 INSERT INTO `clt_message` VALUES ('34', '', '', '1505221774', '0', '203.208.60.248', '', '', '');
 INSERT INTO `clt_message` VALUES ('35', '', '', '1505273247', '0', '203.208.60.219', '', '', '');
 
@@ -740,7 +754,7 @@ CREATE TABLE `clt_module` (
   `listorder` smallint(3) unsigned NOT NULL DEFAULT '0',
   `status` tinyint(1) unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of clt_module
@@ -752,6 +766,7 @@ INSERT INTO `clt_module` VALUES ('4', '产品模型', 'product', '产品展示',
 INSERT INTO `clt_module` VALUES ('5', '下载模型', 'download', '文件下载', '1', '0', '*', '', '0', '1');
 INSERT INTO `clt_module` VALUES ('6', '团队模型', 'team', '员工展示', '1', '0', '*', '', '0', '1');
 INSERT INTO `clt_module` VALUES ('11', '乐器类型模型', 'type', '类型集合', '1', '0', '*', '', '0', '1');
+INSERT INTO `clt_module` VALUES ('15', '课程类型模型', 'classtype', '课程类型', '1', '0', '*', '', '0', '1');
 
 -- ----------------------------
 -- Table structure for clt_order
@@ -830,8 +845,55 @@ CREATE TABLE `clt_paylist` (
 -- ----------------------------
 -- Records of clt_paylist
 -- ----------------------------
-INSERT INTO `clt_paylist` VALUES ('1', '支付宝', 'baoapi', '1', '0', '{\"app_id\":\"\\u5965\\u672f\\u5927\\u5e08\\u591a\",\"merchant_private_key\":\"\\u5965\\u672f\\u5927\\u5e08\\u591a\",\"alipay_public_key\":\"\\u963f\\u65af\\u987f\\u6492\"}', '/uploads/20171212/616903b84c04af6afeb3db759a8d6300.jpg');
-INSERT INTO `clt_paylist` VALUES ('2', '微信', '', '2', '0', '{\"appid\":\"asdasd\",\"secret\":\"asdasd\",\"shopid\":\"asdasd\",\"shopsecret\":\"asdasd\"}', '/uploads/20171212/298aeb470a7999264877b71bf515674d.jpg');
+INSERT INTO `clt_paylist` VALUES ('1', '支付宝', 'baoapi', '1', '0', '{\"app_id\":\"2017122901339599\",\"merchant_private_key\":\"MIIEpAIBAAKCAQEAwI7b1O6K3ZRBvB9wLkL53RhttSuGNfL6JqUscOWaChgMhcI3hxMETkCWZhvb0iUJHPE\\/cm3F2Upmf3p+ep1bw2d5awmXGel+9f76bqrZptydIu1brLI2zCjqQJXZEvwHqDVQcgHpPZiUdMsq44Y\\/ad4JtwhLE2Zhr7HQYpLgJhBxz7zHzjkkl\\/xAZSWXdKALjUcbW2S+4jVHZ30VxjXccLt87+XxNo5mO2xKcXTWgciYUwmB6hmvSiSwe32Gks6GN\\/VpfJ0hbSwXXnQwZA3AvU44sq5NQ5pBgxtfASSJofgYVwHFk98ApQgFd5LPlX0QV0o36qsNfSpTSBmlZJtzKQIDAQABAoIBAD7fpqoNRax6F0is3z1LwzhNHK1WS9lbwBBUSIGIhtaa6aPXObhSHkrKzhEDMbCZRTN9FmFvtHVx1Kv1PE0fCnJwW\\/X2SK8+TaVXH0B5at4QFQLti8yE2F2rUmnKQ\\/nt7zYeSmkfdKAXLQpBuHxYPmZ8CKIKBDGOcYEjx04YdTYYASl2cUKK05FA9ac8wySuRNPTwy\\/G6yAkD9fWe361peu1IW0WjUikK+\\/8mJhOwsoTj+B0ARS79LXE\\/7zEUfE1cs\\/C5jaV7IqQSe8pykOyKLpOGxviO2AbZjRfGN4N5MIShQ5YwbteR3owBAGEuU35FFNiAfdV48m1OUmlIZE0uo0CgYEA7glujaiCHsMba1X5+IDnTebrtysgymVV8BrW\\/aVixSr2uw1EPyKD6vvD\\/Y\\/4\\/aRH4ktvD6Kqgcn0+P3iMQmTV3xCjRqZjD7iCGAlony6TlEoFKqvr+sGpE+rCcRbW3\\/VnO+0jk9XpTefqMBIh0ESzOfblQA1+UmIKQdtxLIpIDcCgYEAzxbVniK\\/PXu47Jm2AaGHmhsojDX7iwgcDegSC8SZRv1IeGejcyNArf6bdPVl8P819zeEanJAA3o1Ukj0xjkMnyL+AHtf0Trpl\\/FCIaSdPiNIhJkdpN3lni9Foi7Ks6ed0iNdb+A9xgOA9MYFIzMd8l4FklSuGxv4XBrQnTVwl58CgYEArWDTVHzzYeKsuw6hhx6k23oiIIVaWfFbmgqCo7dt7Lzxf6cXGYFTYrnEtJDEREL\\/VNWq7FGILgbi1uVddmhKGMPaWZqRUrSOwJj\\/cI22ycqVDhCQ7OqcKNwacX\\/DJy9CcQ+rjKg\\/54hPU4PSkCmWvwb2Sl4f8hZcBb5ydn1qNRsCgYEAwx9qy4NF2fKXPSdfnI3MLOHmBKZgipFrjZbaWgg1u\\/OusvRDx5qxuL+rTjpigP6WpIbE118q\\/ZvKXeur5pGeWNsppN6aW5Q8wRNrEjP+jKvGCloS2mLRlYhI\\/hVEnJ4UUAlOYrlQuyBWA0wJTy88yj7Y1RXArn5eNrp1UYsmuVUCgYBbBtMtnlfXyizdxXmkkz1lzDzmj6eWnf6iDFQcUzlWVLigdGhimRFxFOlrCczb9CzbhooNEdT+P+45cq\\/7tzES4F6U+QZ8XXw5TM044nNTo9KbgyzLcsIxAGImEvzsMUCCCzW5ujbWmsIDH0ohsR+jMs98Vcr0PcV4hWtcBpzuKw==\",\"alipay_public_key\":\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8RHTBDFanWO0PTxRRsLUntQZ3VTSEQu9TrfC3qxaUtahAE+1vGpdFqzrPfQf97N7DtQ0Xg3Ql5MvXDpJwOuBrKAgnpVk+5Jtz2NddFIOgjcBgUz+Dl6TuN4mHZkp+w1cmySTqPu23UlJ5eg1LanZ\\/ijeJFtLXEy+wecvVo\\/ijn54y3cbFUOKGWNg4idbPYQl0qLEdEuptgBKCoHzSWh4gIynjSa\\/qSMhPqw5Lks6PY2+ywGER5EvNZ\\/Nh9tecVDuAWcbJ0TzouTHt0uD2UQ47Lea1rTj9PY7vOPj2249Z5C37GP8Mfd\\/VdVkuihGLmQ3wiES1\\/5whqLncFAvGouOpQIDAQAB\"}', '/uploads/20171212/616903b84c04af6afeb3db759a8d6300.jpg');
+INSERT INTO `clt_paylist` VALUES ('2', '微信', '', '2', '0', '{\"appid\":\"wxb5aec13c030a530b\",\"appsecret\":\"2232d4acc3612e530f0ccc311c72d68c\",\"mchid\":\"1267579601\",\"key\":\"abcdefghijklmnopqrstuvwxyzzqlzql\",\"notify\":\"http:\\/\\/kaoji.meetv.com.cn\"}', '/uploads/20171212/298aeb470a7999264877b71bf515674d.jpg');
+
+-- ----------------------------
+-- Table structure for clt_pay_order
+-- ----------------------------
+DROP TABLE IF EXISTS `clt_pay_order`;
+CREATE TABLE `clt_pay_order` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `uid` int(11) NOT NULL DEFAULT '0' COMMENT '//用户id',
+  `order_no` varchar(30) NOT NULL,
+  `trade_no` varchar(150) DEFAULT NULL COMMENT '交易号',
+  `order_money` decimal(10,2) DEFAULT '0.00',
+  `state` int(2) NOT NULL DEFAULT '0',
+  `addtime` int(10) NOT NULL,
+  `update_time` int(10) DEFAULT '0',
+  `order_data` text COMMENT '//json格式数据 用于存储学员信息',
+  `fee` decimal(10,2) DEFAULT '0.00' COMMENT '//报考费',
+  `jc_fee` decimal(10,2) DEFAULT '0.00' COMMENT '//教材费',
+  `fw_fee` decimal(10,2) DEFAULT '0.00' COMMENT '平台服务费',
+  `sx_fee` decimal(10,2) DEFAULT '0.00' COMMENT '//手续费',
+  `delete_time` int(10) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=93 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of clt_pay_order
+-- ----------------------------
+INSERT INTO `clt_pay_order` VALUES ('72', '1', '2017122751101515', null, '0.01', '0', '1514362371', '0', '{\"name\":\"\\u738b\\u664b\",\"tel\":\"18721667531\"}', '0.00', '0.00', '0.00', '0.00', '0');
+INSERT INTO `clt_pay_order` VALUES ('73', '1', '2017122756101495', null, '0.01', '0', '1514366760', '0', null, '0.00', '0.00', '0.00', '0.00', '0');
+INSERT INTO `clt_pay_order` VALUES ('74', '1', '2017122848989954', null, '0.01', '0', '1514430592', '0', null, '0.00', '0.00', '0.00', '0.00', '0');
+INSERT INTO `clt_pay_order` VALUES ('75', '1', '2017122850535149', null, '0.01', '0', '1514432290', '0', null, '0.00', '0.00', '0.00', '0.00', '0');
+INSERT INTO `clt_pay_order` VALUES ('76', '1', '2017122810257102', null, '0.01', '0', '1514432335', '0', null, '0.00', '0.00', '0.00', '0.00', '1515573135');
+INSERT INTO `clt_pay_order` VALUES ('77', '1', '2017122955514910', null, '0.01', '0', '1514518087', '0', null, '0.00', '0.00', '0.00', '0.00', '1515573125');
+INSERT INTO `clt_pay_order` VALUES ('78', '1', '2017122949101985', null, '0.01', '0', '1514518609', '0', null, '0.00', '0.00', '0.00', '0.00', '1515573125');
+INSERT INTO `clt_pay_order` VALUES ('79', '1', '2017122950551001', null, '0.01', '0', '1514527378', '0', null, '0.00', '0.00', '0.00', '0.00', '1515573118');
+INSERT INTO `clt_pay_order` VALUES ('80', '1', '2017122998999753', null, '0.01', '0', '1514529099', '0', null, '0.00', '0.00', '0.00', '0.00', '1515573118');
+INSERT INTO `clt_pay_order` VALUES ('81', '1', '2017122910256995', null, '0.01', '0', '1514529471', '0', null, '0.00', '0.00', '0.00', '0.00', '1515573125');
+INSERT INTO `clt_pay_order` VALUES ('82', '1', '2017122910049565', null, '0.01', '0', '1514529917', '0', null, '0.00', '0.00', '0.00', '0.00', '1515573125');
+INSERT INTO `clt_pay_order` VALUES ('83', '1', '2017122955525348', null, '0.01', '0', '1514533255', '0', null, '0.00', '0.00', '0.00', '0.00', '1515573125');
+INSERT INTO `clt_pay_order` VALUES ('84', '1', '2017122910253100', null, '0.01', '0', '1514534415', '0', null, '0.00', '0.00', '0.00', '0.00', '1515573125');
+INSERT INTO `clt_pay_order` VALUES ('85', '1', '2018010856984897', null, '0.01', '0', '1515383112', '0', null, '0.00', '0.00', '0.00', '0.00', '1515573125');
+INSERT INTO `clt_pay_order` VALUES ('86', '1', '2018010810255975', null, '0.01', '0', '1515383247', '0', null, '0.00', '0.00', '0.00', '0.00', '1515573125');
+INSERT INTO `clt_pay_order` VALUES ('87', '1', '2018010855559851', null, '0.01', '0', '1515383575', '0', null, '0.00', '0.00', '0.00', '0.00', '1515573125');
+INSERT INTO `clt_pay_order` VALUES ('88', '1', '2018010810299995', null, '0.01', '0', '1515400335', '0', null, '0.00', '0.00', '0.00', '0.00', '1515573125');
+INSERT INTO `clt_pay_order` VALUES ('89', '1', '2018011653531019', null, '0.01', '0', '1516071989', '0', null, '0.00', '0.00', '0.00', '0.00', '0');
+INSERT INTO `clt_pay_order` VALUES ('90', '1', '2018011650995255', null, '0.01', '0', '1516078434', '0', null, '0.00', '0.00', '0.00', '0.00', '0');
+INSERT INTO `clt_pay_order` VALUES ('91', '1', '2018011610257995', null, '0.01', '0', '1516081023', '0', null, '0.00', '0.00', '0.00', '0.00', '0');
+INSERT INTO `clt_pay_order` VALUES ('92', '1', '2018011655102515', null, '0.01', '0', '1516081032', '0', null, '0.00', '0.00', '0.00', '0.00', '0');
 
 -- ----------------------------
 -- Table structure for clt_picture
@@ -900,6 +962,8 @@ CREATE TABLE `clt_plugin` (
 -- Records of clt_plugin
 -- ----------------------------
 INSERT INTO `clt_plugin` VALUES ('qq', 'QQ登陆', '1.0', '褫憷', 'a:2:{i:0;a:4:{s:4:\"name\";s:6:\"app_id\";s:5:\"label\";s:6:\"app_id\";s:4:\"type\";s:4:\"text\";s:5:\"value\";s:0:\"\";}i:1;a:4:{s:4:\"name\";s:10:\"app_secret\";s:5:\"label\";s:10:\"app_secret\";s:4:\"type\";s:4:\"text\";s:5:\"value\";s:0:\"\";}}', 'a:2:{s:6:\"app_id\";s:9:\"101386319\";s:10:\"app_secret\";s:32:\"f328198fe17031567fedd8024944f4d4\";}', 'QQ登陆插件 ', '1', 'login', 'logo.png', 'N;', null);
+INSERT INTO `clt_plugin` VALUES ('pc_weixin', '微信PC登录', '', '', 'a:2:{i:0;a:4:{s:4:\"name\";s:6:\"app_id\";s:5:\"label\";s:6:\"app_id\";s:4:\"type\";s:4:\"text\";s:5:\"value\";s:0:\"\";}i:1;a:4:{s:4:\"name\";s:10:\"app_secret\";s:5:\"label\";s:10:\"app_secret\";s:4:\"type\";s:4:\"text\";s:5:\"value\";s:0:\"\";}}', 'a:2:{s:6:\"app_id\";s:18:\"wx972a6f963cf1d611\";s:10:\"app_secret\";s:32:\"668ee48328701ca10efef2517d8826e8\";}', '微信PC登录插件 ', '1', 'login', 'logo.png', 'N;', null);
+INSERT INTO `clt_plugin` VALUES ('phone_weixin', '微信浏览器登录', '', '', 'a:2:{i:0;a:4:{s:4:\"name\";s:6:\"app_id\";s:5:\"label\";s:6:\"app_id\";s:4:\"type\";s:4:\"text\";s:5:\"value\";s:0:\"\";}i:1;a:4:{s:4:\"name\";s:10:\"app_secret\";s:5:\"label\";s:10:\"app_secret\";s:4:\"type\";s:4:\"text\";s:5:\"value\";s:0:\"\";}}', 'a:2:{s:6:\"app_id\";s:18:\"wxb5aec13c030a530b\";s:10:\"app_secret\";s:32:\"2232d4acc3612e530f0ccc311c72d68c\";}', '微信浏览器登录插件 ', '1', 'login', 'logo.png', 'N;', null);
 
 -- ----------------------------
 -- Table structure for clt_posid
@@ -4479,7 +4543,7 @@ CREATE TABLE `clt_system` (
 -- ----------------------------
 -- Records of clt_system
 -- ----------------------------
-INSERT INTO `clt_system` VALUES ('1', 'MEETUUU.COM', 'http://www.cltphp.com/', 'MEETUUU.COM', 'MEETUUU.COM', 'MEETUUU.COM', '陕ICP备15008093号-3', '2015-2020', '西安市雁塔区', '18792402229', '1109305987@qq.com', '/uploads/20170904/9f04d8be2a05d926bc3e328eded02378.png');
+INSERT INTO `clt_system` VALUES ('1', 'MEETUUU.COM', 'http://kaoji.meetv.com.cn/', 'MEETUUU.COM', 'MEETUUU.COM', 'MEETUUU.COM', '陕ICP备15008093号-3', '2015-2020', '西安市雁塔区', '18792402229', '1109305987@qq.com', '/uploads/20170904/9f04d8be2a05d926bc3e328eded02378.png');
 
 -- ----------------------------
 -- Table structure for clt_team
@@ -4552,10 +4616,10 @@ CREATE TABLE `clt_users` (
   `reg_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '注册时间',
   `last_login` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '最后登录时间',
   `last_ip` varchar(15) NOT NULL DEFAULT '' COMMENT '最后登录ip',
-  `qq` varchar(20) NOT NULL COMMENT 'QQ',
-  `mobile` varchar(20) NOT NULL COMMENT '手机号码',
+  `qq` varchar(20) NOT NULL DEFAULT '' COMMENT 'QQ',
+  `mobile` varchar(20) NOT NULL DEFAULT '' COMMENT '手机号码',
   `mobile_validated` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '是否验证手机',
-  `oauth` varchar(10) DEFAULT '' COMMENT '第三方来源 wx weibo alipay',
+  `oauth` varchar(100) DEFAULT '' COMMENT '第三方来源 wx weibo alipay',
   `openid` varchar(100) DEFAULT NULL COMMENT '第三方唯一标示',
   `unionid` varchar(100) DEFAULT NULL,
   `avatar` varchar(255) DEFAULT NULL COMMENT '头像',
@@ -4571,7 +4635,7 @@ CREATE TABLE `clt_users` (
   `status` varchar(20) DEFAULT 'hide' COMMENT '登录状态',
   PRIMARY KEY (`id`),
   KEY `email` (`email`)
-) ENGINE=MyISAM AUTO_INCREMENT=2600 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2601 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of clt_users
@@ -4732,6 +4796,7 @@ INSERT INTO `clt_users` VALUES ('2596', '', '', null, '1', '0', '1505263131', '0
 INSERT INTO `clt_users` VALUES ('2597', '654222249@qq.com', '7a93d4f261747ac28ccb1bbe666cacdb', null, '0', '0', '1505265852', '0', '', '', '', '0', '', null, null, '/uploads/20170913/504607a749e40709e884c3afcbf2b87a.png', '0', '0', '0', '1', 'tynetm', '1', '0', '5cdcb47d9d0883826d1806563968bc29', '', 'hide');
 INSERT INTO `clt_users` VALUES ('2598', '1090964176@qq.com', 'e10adc3949ba59abbe56e057f20f883e', null, '0', '0', '1505289591', '0', '', '', '', '0', '', null, null, null, null, null, null, '1', 'sgml', '1', '0', '7ab068241fc74337ad536a8546bafcb8', '', 'hide');
 INSERT INTO `clt_users` VALUES ('2599', '', '', null, '1', '0', '1505296130', '0', '', '', '', '0', 'qq', '2422B9B86EF1CAFA51D5255F455BDC23', null, 'http://qzapp.qlogo.cn/qzapp/101386319/2422B9B86EF1CAFA51D5255F455BDC23/100', '0', '0', '0', '0', null, '1', '0', '226cbb140377ffa5a54a5dfc5d27be9a', '', 'hide');
+INSERT INTO `clt_users` VALUES ('2600', '972270516@qq.com', 'e10adc3949ba59abbe56e057f20f883e', null, '0', '0', '1516086415', '0', '', '', '', '0', '', null, null, null, '0', '0', '0', '1', 'wangjin', '1', '0', 'e3b3dfb082f291f1274ea018c88f1e25', '', 'hide');
 
 -- ----------------------------
 -- Table structure for clt_user_kaod
@@ -4817,7 +4882,7 @@ CREATE TABLE `clt_wx_config` (
 -- Records of clt_wx_config
 -- ----------------------------
 INSERT INTO `clt_wx_config` VALUES ('1', '0', 'WCHAT', '{\"APP_KEY\":\"\",\"APP_SECRET\":\"\",\"AUTHORIZE\":\"http:\\/\\/b2c1.01.niushop.com.cn\",\"CALLBACK\":\"http:\\/\\/b2c1.01.niushop.com.cn\\/wap\\/Login\\/callback\"}', '微信', '0', '1488350947', '1497105440');
-INSERT INTO `clt_wx_config` VALUES ('2', '0', 'SHOPWCHAT', '{\"appid\":\"dfdsfdsf90bc7b7a\",\"appsecret\":\"e5147ce07128asdfdsf628b5c3fe1af2ea5797\",\"token\":\"dffdf\"}', '', '1', '1497088090', '1513580316');
+INSERT INTO `clt_wx_config` VALUES ('2', '0', 'SHOPWCHAT', '{\"appid\":\"dfdsfdsf90bc7b7a\",\"appsecret\":\"e5147ce07128asdfdsf628b5c3fe1af2ea5797\",\"token\":\"dffdf\"}', '', '1', '1497088090', '1516081041');
 
 -- ----------------------------
 -- Table structure for clt_wx_default_replay
@@ -4989,14 +5054,14 @@ CREATE TABLE `clt_wx_menu` (
   PRIMARY KEY (`menu_id`),
   KEY `IDX_biz_shop_menu_orders` (`sort`),
   KEY `IDX_biz_shop_menu_shopId` (`instance_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 AVG_ROW_LENGTH=1638 COMMENT='微设置->微店菜单';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 AVG_ROW_LENGTH=1638 COMMENT='微设置->微店菜单';
 
 -- ----------------------------
 -- Records of clt_wx_menu
 -- ----------------------------
 INSERT INTO `clt_wx_menu` VALUES ('1', '0', '官网', '', '0', '2', '3', 'http://www.cltphp.com/', '0', '1', '1512442512', '0');
 INSERT INTO `clt_wx_menu` VALUES ('2', '0', '手册', '', '0', '2', '5', 'http://www.cltphp.com/', '0', '2', '1512442543', '0');
-INSERT INTO `clt_wx_menu` VALUES ('3', '0', '动态', '', '0', '2', '4', 'http://www.cltphp.com/', '0', '3', '1512547727', '0');
+INSERT INTO `clt_wx_menu` VALUES ('5', '0', '菜单名称', '', '0', '2', '0', '', '0', '3', '1514178544', '0');
 
 -- ----------------------------
 -- Table structure for clt_wx_user

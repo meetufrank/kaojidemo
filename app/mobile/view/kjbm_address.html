@@ -1,0 +1,221 @@
+{extend name="common/base"}
+   {block name="style"}
+    <link rel="stylesheet" href="__MOBILE__/css/address.css">
+   {/block}
+ 
+   {block name="content"}
+    
+	 <div class="inBg"></div>
+    <div class="container">
+        <form  id="form">
+            <div class="content clearfix">
+                <label class="formLabel float-L">省</label>
+                <div class="formInput float-L">
+                    <select name="province" id="province" data-foolish-msg="请填省份" >
+                        <option value="">请填省份</option>
+                        {foreach name="province" item="vo"}
+                        <option value="{$vo.id}" {if condition="$kjdata['province'] eq $vo['id']"}selected{/if}>{$vo.name}</option>
+                        {/foreach}
+                        
+                    </select>
+
+                </div>
+            </div>
+            <div class="content clearfix">
+                <label class="formLabel float-L">市</label>
+                <div class="formInput float-L">
+                    <select name="city" id="city" data-foolish-msg="请填写市" >
+                        <option value="">请填写市</option>
+                      
+                    </select>
+                </div>
+            </div>
+            <div class="content clearfix">
+                <label class="formLabel float-L">区</label>
+                <div class="formInput float-L">
+                    <select name="district" id="district" data-foolish-msg="请填写区/县" >
+                        <option value="">请填写区/县</option>
+                        
+                    </select>
+
+                </div>
+            </div>
+            <div class="content clearfix">
+                <label class="formLabel float-L">详细地址</label>
+                <div class="formInput float-L">
+                    <input id="address" class="bor" data-foolish-msg="请输入联系地址" type="text" name="address"  placeholder="请输入联系地址" value="{$kjdata['address']}">
+                </div>
+            </div>
+            <div class="content clearfix">
+                <label class="formLabel float-L">邮编</label>
+                <div class="formInput float-L">
+                    <input id="email" class="bor" type="tel" name="email" data-foolish-msg="请输入正确的邮编" placeholder="请填写邮编" value="{$kjdata['email']}" >
+                </div>
+            </div>
+            <div style="height:100px;"></div>
+
+        </form>
+    </div>
+
+
+
+    <div id="footer" class="bottom clearfix">
+        <div><a href="javascript:history.back(-1);"><span class="on">上一步</span></a></div>
+        <div><span class="active">下一步</span></div>
+    </div>
+{/block}
+
+{block name="js"}
+	<script src="__MOBILE__/mobile/layer.js"></script>
+    <script>
+   
+        function getcity(id){
+          		var current_province_id=id;
+                  
+		
+		$.ajax({
+			url:"{:url('getRegion')}",
+			data:{pid:current_province_id},
+			dataType:'json',
+			type:'post',
+                        async: false,
+			success:function(re){
+                            
+				var html='<option value="0">请选择</option>';
+                                $("[name='district']").html(html);
+				var item=re;
+				for(var i in item){
+                                    if (item[i]['id']=='{$kjdata[\'city\']}'){
+					html +='<option value="'+item[i]['id']+'" selected>'+item[i]['name']+'</option>';
+                                    }else{
+                                        html +='<option value="'+item[i]['id']+'" >'+item[i]['name']+'</option>';
+                                    }
+					
+				}
+				$("[name='city']").html(html);
+                                
+			}
+		})
+      }
+      
+      
+      function getdistrict(id){
+          		var current_city=id;
+		$.ajax({
+			url:"{:url('getRegion')}",
+			data:{pid:current_city},
+			dataType:'json',
+			type:'post',
+			success:function(re){
+				var html='<option value="0">请选择</option>';
+				var item=re;
+				for(var i in item){
+                                    if (item[i]['id']=='{$kjdata[\'district\']}'){
+					html +='<option value="'+item[i]['id']+'" selected>'+item[i]['name']+'</option>';
+                                    }else{
+                                        html +='<option value="'+item[i]['id']+'" >'+item[i]['name']+'</option>';
+                                    }
+					
+				}
+				$("[name='district']").html(html);
+			}
+		})
+      }
+      	$("[name='province']").change(function(){
+		$("[name='city']").html('<option value="0">请选择</option>');
+                getcity($(this).val());
+                $("[name='district']").val();
+	})
+	$("[name='city']").change(function(){
+		$("[name='district']").html('<option value="0">请选择</option>');
+
+                getdistrict($(this).val());
+	})
+	var pro_id=$("[name='province']").val();
+        if(pro_id>0){
+            $("[name='city']").html('<option value="0">请选择</option>');
+            getcity($("[name='province']").val());
+            $("[name='district']").html('<option value="0">请选择</option>');
+            getdistrict($("[name='city']").val());
+        }
+        
+        var requestData ={};
+        $("#footer .active").click(function() {
+            var valid = true
+            var requestData = {
+                province : $("#province").val(),
+                city : $("#city").val(),
+                Area : $("#district").val(),
+                address :$("#address").val(),
+                email : $("#email").val()
+            };
+          
+            if(valid && requestData.province.length <= 0){
+                valid = false;
+                var tips = $("#province").attr("data-foolish-msg");
+                $("#province").focus();
+
+
+            }
+            if(valid && requestData.city.length <= 0){
+                valid = false;
+                var tips = $("#city").attr("data-foolish-msg");
+                $("#city").focus();
+
+
+            }
+            if(valid && requestData.Area.length <= 0){
+                valid = false;
+                var tips = $("#district").attr("data-foolish-msg");
+                $("#district").focus();
+
+
+            }
+            if(valid && requestData.address.length <=0){
+                valid = false;
+                var tips = $("#address").attr("data-foolish-msg");
+                $("#address").focus();
+
+
+            }
+            if(valid && requestData.email.length !==6 ){
+                valid = false;
+                var tips = $("#email").attr("data-foolish-msg");
+                $("#email").focus();
+
+
+            }
+
+            if(valid){
+                savedata();
+            }else{
+                layer.open({
+                    content: tips
+                    ,skin: 'msg'
+                    ,time: 1 //2秒后自动关闭
+                });
+            }
+
+
+function savedata(){
+  $.ajax({
+			url:"{:url('savedata')}",
+			data:{data:$('#form').serialize()},
+			dataType:'json',
+			type:'post',
+			success:function(re){
+				window.location.href='{:url(\'cropper\')}';
+			}
+		}) 
+}
+
+        });
+
+
+
+
+
+    </script>
+    {/block}
+
+{/extend}

@@ -84,7 +84,7 @@ class Plugin extends Common{
      */
     private function scanPlugin(){
         $plugin_list = array();
-        $plugin_list['payment'] = $this->dirscan(PLUGIN_PATH.'payment');
+        //$plugin_list['payment'] = $this->dirscan(PLUGIN_PATH.'payment');
         $plugin_list['login'] = $this->dirscan(PLUGIN_PATH.'login');
         foreach($plugin_list as $k=>$v){
             foreach($v as $k2=>$v2){

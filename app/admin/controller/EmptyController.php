@@ -11,20 +11,21 @@ class EmptyController extends Common{
         $this->moduleid = $this->mod[MODULE_NAME];
         $this->dao = db(MODULE_NAME);
         $fields = F($this->moduleid.'_Field');
-        foreach($fields as $key => $res){
+        if(is_array($fields)){
+          foreach($fields as $key => $res){
             $res['setup']=string2array($res['setup']);
             $this->fields[$key]=$res;
+          }  
         }
-//        print_r($this->fields);exit;
+        
         unset($fields);
         unset($res);
         $this->assign ('fields',$this->fields);
     }
     public function index(){
         if(request()->isPost()){
-            
             $request = Request::instance();
-            $modelname = strtolower($request->controller());
+            $modelname = MODULE_NAME;
             $model = db($modelname);
             $keyword=input('post.key');
             $page =input('page')?input('page'):1;
@@ -38,7 +39,7 @@ class EmptyController extends Common{
                     $catid = input('post.catid');
                 }
             }
-      
+
             if(!empty($keyword) ){
                 $map['title']=array('like','%'.$keyword.'%');
             }
@@ -67,30 +68,14 @@ class EmptyController extends Common{
             $rsult['rel'] = 1;
             return $rsult;
         }else{
-            $id=input('catid');
-            $count=db('category')->where(['parentid'=>$id])->count();
-            
-        
-            if($count){
-                $this->redirect(url('Category/index'));
-                
-            }else{
-                $atemplate = db('category')->where('id',$id)->column('atemplate_list');
-                if(empty($atemplate[0])){
-                    return $this->fetch ('content/index');
-                }else{
-                     return $this->fetch ('/'.$atemplate[0]);
-                }
-               
-            }
-            
+            return $this->fetch ('content/index');
         }
     }
 
     public function edit(){
         $id = input('id');
         $request = Request::instance();
-        $controllerName = $request->controller();
+        $controllerName = MODULE_NAME;
         if($controllerName=='Page'){
             $p = $this->dao->where('id',$id)->find();
             if(empty($p)){
@@ -112,7 +97,7 @@ class EmptyController extends Common{
     function update(){
         $request = Request::instance();
 
-        $controllerName = $request->controller();
+        $controllerName = MODULE_NAME;
         $model = $this->dao;
         $fields = $this->fields;
         $data = $this->checkfield($fields,input('post.'));
@@ -201,12 +186,12 @@ class EmptyController extends Common{
                     }
                 }
                 if(isset($setup['inputtype'])){
-                    if($setup['inputtype']=='checkbox'){
+                    if($setup['inputtype']=='checkbox' || $fields[$key]['type']=='checkbox_db'){
                         $post[$key] = implode(',',$post[$key]);
                     }
                 }
                 if(isset($setup['fieldtype'])){
-                    if($fields[$key]['type']=='checkbox'){
+                    if($fields[$key]['type']=='checkbox' || $fields[$key]['type']=='checkbox_db'){
                         $post[$key] = implode(',',$post[$key]);
                     }
                 }
@@ -236,14 +221,13 @@ class EmptyController extends Common{
 
     public function add(){
         $form=new Form();
-        
         $this->assign ( 'form', $form );
         $this->assign ( 'title', '添加内容' );
         return $this->fetch('content/edit');
     }
     public function insert(){
         $request = Request::instance();
-        $controllerName = $request->controller();
+        $controllerName = MODULE_NAME;
         $model = $this->dao;
         $fields = $this->fields;
         $data = $this->checkfield($fields,input('post.'));
@@ -348,8 +332,11 @@ class EmptyController extends Common{
         return $result;
     }
     public function delImg(){
+        if(!input('post.url')){
+            return ['code'=>0,'请指定要删除的图片资源'];
+        }
         $file = ROOT_PATH.__PUBLIC__.input('post.url');
-        if(file_exists($file)){
+        if(file_exists($file) && trim(input('post.url'))!=''){
             is_dir($file) ? dir_delete($file) : unlink($file);
         }
         if(input('post.id')){

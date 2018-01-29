@@ -5,7 +5,7 @@ use think\Db;
 use think\Controller;
 class Common extends Controller
 {
-    protected $mod,$role,$system,$nav,$menudata,$cache_model,$categorys,$module,$moduleid,$adminRules,$HrefId,$lmcate;
+    protected $mod,$role,$system,$nav,$menudata,$cache_model,$categorys,$module,$moduleid,$adminRules,$HrefId;
     public function _initialize()
     {
 
@@ -13,8 +13,9 @@ class Common extends Controller
         if (!session('aid')) {
             $this->redirect('login/index');
         }
-        define('MODULE_NAME',strtolower(request()->controller()));
-        define('ACTION_NAME',strtolower(request()->action()));
+         define('MODULE_NAME',strtolower(request()->controller()));
+         define('ACTION_NAME',strtolower(request()->action()));
+
         //权限管理
         //当前操作权限ID
         if(session('aid')!=1){
@@ -35,10 +36,9 @@ class Common extends Controller
         $this->system = F('System');
         $this->categorys = F('Category');
         $this->module = F('Module');
-        $this->lmcate=F('Lmcate');//栏目归属
         $this->mod = F('Mod');
         $this->role = F('Role');
-        $this->cache_model=array('Module','Role','Category','Posid','Field','System','Lmcate');
+        $this->cache_model=array('Module','Role','Category','Posid','Field','System');
         if(empty($this->system)){
             foreach($this->cache_model as $r){
                 savecache($r);

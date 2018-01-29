@@ -282,7 +282,71 @@ class Form{
         $parseStr   .= '</select>';
         return $parseStr;
     }
+public function select_db($info,$value){
 
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $id = $field = $info['field'];
+        $validate = getvalidate($info);
+        $action = ACTION_NAME;
+        if($action=='add'){
+            $value = $value ? $value : $info['setup']['default'];
+        }else{
+            $value = $value ? $value : $this->data[$field];
+        }
+        if($value != '') $value = strpos($value, ',') ? explode(',', $value) : $value;
+        $dbname=$info['setup']['db'];
+        $fields=$info['setup']['value'].",".$info['setup']['name'];
+         if(!empty($dbname)){
+            $dbname= db($dbname);
+            if(!empty($info['setup']['where'])){
+               $query= $dbname->where(json_decode($info['setup']['where'],1));
+            }else{
+                $query= $dbname;
+            } 
+            if(!empty($fields)){
+                $optionsarr=$query->column($fields);
+            }else{
+                $optionsarr=$query->select();
+            }
+          
+        }
+
+        if(!empty($info['setup']['multiple'])) {
+            $onchange = '';
+            if(isset($info['setup']['onchange'])){
+                $onchange = $info['setup']['onchange'];
+            }
+            $parseStr = '<select id="'.$id.'" name="'.$field.'"  onchange="'.$onchange.'" class="'.$info['class'].'"  '.$validate.' size="'.$info['setup']['size'].'" multiple="multiple" ><option value=""></option>';
+        }else {
+            $onchange = '';
+            if(isset($info['setup']['onchange'])){
+                $onchange = $info['setup']['onchange'];
+            }
+            $parseStr = '<select id="'.$id.'" name="'.$field.'" onchange="'.$onchange .'"  class="'.$info['class'].'" '.$validate.'>';
+        }
+
+        if(is_array($optionsarr)) {
+            foreach($optionsarr as $key=>$val) {
+                if(!empty($value)){
+                    $selected='';
+                    if(is_array($value)){
+                        if(in_array($key,$value)){
+                            $selected = ' selected="selected"';
+                        }
+                    }else{
+                        if($value==$key){
+                            $selected = ' selected="selected"';
+                        }
+                    }
+                    $parseStr   .= '<option '.$selected.' value="'.$key.'">'.$val.'</option>';
+                }else{
+                    $parseStr   .= '<option value="'.$key.'">'.$val.'</option>';
+                }
+            }
+        }
+        $parseStr   .= '</select>';
+        return $parseStr;
+    }
     public function checkbox($info,$value){
 
         $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
@@ -308,7 +372,8 @@ class Form{
                 $optionsarr[$k] = $v[0];
             }
         }
-        if($value != '') $value = strpos($value, ',') ? explode(',', $value) : array($value);
+     
+        if($value != '') $value = strpos($value, ',') ? explode(',', $value) : array($value); 
         $i = 1;
         $parseStr ='';
         foreach($optionsarr as $key=>$r) {
@@ -323,7 +388,55 @@ class Form{
         return $parseStr;
 
     }
+    
+public function checkbox_db($info,$value){
 
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $id = $field = $info['field'];
+        $validate = getvalidate($info);
+        $action = ACTION_NAME;
+        if($action=='add'){
+            $value = $value ? $value : $info['setup']['default'];
+        }else{
+            $value = $value ? $value : $this->data[$field];
+        }
+        $labelwidth = $info['setup']['labelwidth'];
+        
+        $dbname=$info['setup']['db'];
+        $fields=$info['setup']['value'].",".$info['setup']['name'];
+         if(!empty($dbname)){
+            $dbname= db($dbname);
+            if(!empty($info['setup']['where'])){
+               $query= $dbname->where(json_decode($info['setup']['where'],1));
+            }else{
+                $query= $dbname;
+            } 
+            if(!empty($fields)){
+                $optionsarr=$query->column($fields);
+            }else{
+                $optionsarr=$query->select();
+            }
+          
+        }
+        
+        if($value != '') $value = strpos($value, ',') ? explode(',', $value) : array($value);
+        
+  
+        
+        $i = 1;
+        $parseStr ='';
+        foreach($optionsarr as $key=>$r) {
+            $key = trim($key);
+            if($i>1){
+                $validate='';
+            }
+            $checked = ($value && in_array($key, $value)) ? 'checked' : '';
+            $parseStr .= '<input name="'.$field.'['.$i.']" id="'.$id.'_'.$i.'" '.$checked.' value="'.htmlspecialchars($key).'"  '.$validate.' type="checkbox" class="ace" title="'.htmlspecialchars($r).'">';
+            $i++;
+        }
+        return $parseStr;
+
+    }
     public function radio($info,$value){
         $info['setup'] = is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
         $id = $field = $info['field'];

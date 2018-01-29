@@ -7,7 +7,7 @@
 namespace app\wchat\controller;
 use think\Controller;
 use clt\WchatOauth;
-define("TOKEN", "cltphp");
+
 class Wchat extends Controller
 {
     public $wchat;
@@ -15,12 +15,16 @@ class Wchat extends Controller
     public $author_appid;
     public $instance_id;
     public $style;
-
+    public $token;
     public function _initialize()
     {
         parent::_initialize();
         $this->wchat = new WchatOauth(); // 微信公众号相关类
         $this->instance_id = 0;
+        $value = db('wx_config')->where([ 'key' => 'SHOPWCHAT'])->value('value');
+        $value = json_decode($value,true);
+        $this->token = $value['token'];
+        define("TOKEN", $this->token);
         $this->getMessage();
     }
 

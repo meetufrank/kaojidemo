@@ -7,7 +7,7 @@ class Database extends Common
     function _initialize(){
         parent::_initialize();
         $db=db('');
-        $this->db =   db::connect();
+        $this->db =   Db::connect();
     }
     public function database(){
         if(request()->isPost()){

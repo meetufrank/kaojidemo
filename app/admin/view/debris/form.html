@@ -41,7 +41,14 @@
         $scope.group = {$debrisTypeList};
         layui.use(['form', 'layer','layedit'], function () {
             var form = layui.form, $ = layui.jquery,layedit = layui.layedit;
+            layedit.set({
+                uploadImage: {
+                    url: "{:url('UpFiles/editUpload')}",
+                    type: 'post'
+                }
+            });
             var layeCon = layedit.build('content');
+
             form.on('submit(submit)', function (data) {
                 // 提交到方法 默认为本身
                 var loading = layer.load(1, {shade: [0.1, '#fff']});

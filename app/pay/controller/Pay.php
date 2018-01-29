@@ -57,6 +57,15 @@ class Pay extends Controller {
                 $data['state'] = 1;
                 $data['update_time'] = time();
                 db('pay_order')->where("order_no='".$order_no."'")->update($data);
+                //支付成功，则生成报名记录
+                if(!empty($order_info['order_data'])){
+                       $bmdata=json_decode(unserialize($order_info['order_data']),true);
+                       if(is_array($bmdata)){
+                          db('gameenlist')->insert($bmdata); 
+                        
+                       }
+
+                    }
             }
                // $this->success("支付成功！");
               echo exit('<xml><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg></xml>');  
@@ -101,6 +110,20 @@ class Pay extends Controller {
                 $data['state'] = 1;
                 $data['update_time'] = time();
                 db('pay_order')->where("order_no='".$order_no."'")->update($data);
+                if(!empty($order_info['order_data'])){
+                       $bmdata=json_decode(unserialize($order_info['order_data']),true);
+                       if(is_array($bmdata)){
+                          db('gameenlist')->insert($bmdata); 
+                        
+                       }
+
+                    }
+
+
+
+
+
+                   
             }
                 /*
                  * 这里写业务处理【数据库】

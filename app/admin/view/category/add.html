@@ -103,23 +103,16 @@
         </div>
 
         <div class="layui-form-item">
-            <label class="layui-form-label">前台列表页模板</label>
+            <label class="layui-form-label">列表页模板</label>
             <div class="layui-input-3">
                 <select name="template_list" id="template_list">
                 </select>
             </div>
         </div>
         <div class="layui-form-item">
-            <label class="layui-form-label">前台内容页模板</label>
+            <label class="layui-form-label">内容页模板</label>
             <div class="layui-input-3">
                 <select name="template_show" id="template_show">
-                </select>
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">后台列表页模板</label>
-            <div class="layui-input-3">
-                <select name="atemplate_list" id="atemplate_list">
                 </select>
             </div>
         </div>
@@ -141,10 +134,6 @@
     var templatearr = new Array();
     {volist name="templates" id="tem"}
     templatearr[{$i}] = "{$tem['value']},{$tem['filename']}";
-    {/volist}
-    var atemplatearr = new Array();
-    {volist name="atemplates" id="tem"}
-    atemplatearr[{$i}] = "{$tem['value']},{$tem['filename']}";
     {/volist}
     var datas = "<option value=''>请选择</option>";
     var moduleid =  $('#moduleid').val();
@@ -205,7 +194,7 @@
         }
         $('#template_list').html(datas);
         $('#template_show').html(datas);
-        $('#atemplate_list').html(datas);
+
         listdatas = showdatas ='';
         for(i=1;i<templatearr.length;i++){
             data = templatearr[i].split(',');
@@ -217,14 +206,6 @@
                 showdatas ="<option value='"+data[0]+"'>"+data[1]+"</option>";
                 $('#template_show').append(showdatas);
             }
-        }
-        for(i=1;i<atemplatearr.length;i++){
-            data = atemplatearr[i].split(',');
-            if(data[0].indexOf(mtlist)  >= 0){
-                listdatas  ="<option value='"+data[0]+"'>"+data[1]+"</option>";
-                $('#atemplate_list').append(listdatas);
-            }
-            
         }
         if(form){
             form.render()

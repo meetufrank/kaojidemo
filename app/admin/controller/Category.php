@@ -3,7 +3,7 @@ namespace app\admin\controller;
 use clt\Tree;
 class Category extends Common
 {
-    protected $dao, $categorys , $module,$lmcate;
+    protected $dao, $categorys , $module;
     function _initialize()
     {
         parent::_initialize();
@@ -20,7 +20,6 @@ class Category extends Common
     public function index()
     {
         if ($this->categorys) {
-            
             foreach ($this->categorys as $r) {
                 if ($r['module'] == 'page') {
                     $r['str_manage'] = '<a class="orange" href="' . url('page/edit', array('id' => $r['id'])) . '" title="修改内容"><i class="icon icon-file-text2"></i></a> | ';
@@ -30,21 +29,21 @@ class Category extends Common
                 $r['str_manage'] .= '<a class="blue" title="添加子栏目" href="' . url('Category/add', array('parentid' => $r['id'])) . '"> <i class="icon icon-plus"></i></a> | <a class="green" href="' . url('Category/edit', array('id' => $r['id'])) . '" title="修改"><i class="icon icon-pencil2"></i></a> | <a class="red" href="javascript:del(\'' . $r['id'] . '\')" title="删除"><i class="icon icon-bin"></i></a> ';
 
                 $r['modulename'] = $this->module[$r['moduleid']]['title'];
-                $r['lmcatename']= '<span '.$this->lmcate[$r['catetype']]['style'].'>'.$this->lmcate[$r['catetype']]['lmtype_name'].'</span>';
+
                 $r['dis'] = $r['ismenu'] == 1 ? '<font color="green">显示</font>' : '<font color="red">不显示</font>';
                 $array[] = $r;
             }
-        
+
             $str = "<tr><td class='visible-lg visible-md'>\$id</td>";
             $str .= "<td class='text-left'>\$spacer<a href='__ROOT__/admin/\$module/\$action/\$files/\$id.html' class='green' title='查看内容'>\$catname </a>&nbsp;</td>";
 
-            $str .= "<td class='visible-lg visible-md'>\$modulename</td><td class='visible-lg visible-md'>\$lmcatename</td><td class='visible-lg visible-md'>\$dis</td>";
+            $str .= "<td class='visible-lg visible-md'>\$modulename</td><td class='visible-lg visible-md'>\$dis</td>";
             $str .= "<td><input type='text' size='10' data-id='\$id' value='\$listorder' class='layui-input list_order'></td><td>\$str_manage</td></tr>";
             $tree = new Tree ($array);
             $tree->icon = array('&nbsp;&nbsp;&nbsp;│  ', '&nbsp;&nbsp;&nbsp;├─ ', '&nbsp;&nbsp;&nbsp;└─ ');
             $tree->nbsp = '&nbsp;&nbsp;&nbsp;';
             $categorys = $tree->get_tree(0, $str);
-            
+
             $this->assign('categorys', $categorys);
         }
         $this->assign('title','栏目列表');
@@ -60,6 +59,7 @@ class Category extends Common
         //父级模型ID
         $vo['moduleid'] =$this->categorys[$parentid]['moduleid'];
         $this->assign('module', $vo);
+
         //栏目选择列表
         foreach($this->categorys as $r) {
             $array[] = $r;
@@ -68,12 +68,9 @@ class Category extends Common
         $tree = new Tree ($array);
         $categorys = $tree->get_tree(0, $str,$parentid);
         $this->assign('categorys', $categorys);
-        //前台模版
+        //模版
         $templates= template_file();
         $this->assign ( 'templates',$templates );
-         //后台模版
-        $atemplates= atemplate_file();
-        $this->assign ( 'atemplates',$atemplates );
         //管理员权限组
         $usergroup=db('auth_group')->select();
         $this->assign('rlist',$usergroup);
@@ -102,6 +99,12 @@ class Category extends Common
                 }
                 $page=db('page');
                 $page->insert($data2);
+            }
+            if($data['aid']) {
+                $Attachment =db('Attachment');
+                $aids =  implode(',',$data['aid']);
+                $data['status']= '1';
+                $Attachment->where("aid in (".$aids.")")->updata($data);
             }
             $this->repair();
             savecache('Category');
@@ -141,12 +144,9 @@ class Category extends Common
         $usergroup=db('auth_group')->select();
         $this->assign('rlist',$usergroup);
         $this->assign('title','编辑栏目');
-        //前台模版
+        //模版
         $templates= template_file();
         $this->assign ( 'templates',$templates );
-         //后台模版
-        $atemplates= atemplate_file();
-        $this->assign ( 'atemplates',$atemplates );
         return $this->fetch();
     }
     public function catUpdate(){

@@ -1,0 +1,74 @@
+{extend name="common/base"}
+   {block name="style"}
+     <link rel="stylesheet" href="__MOBILE__/css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="__MOBILE__/css/HomeIndex.css">
+   {/block}
+	
+   
+    
+
+{block name="content"}
+    
+    <div class="banner swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="__MOBILE__/img/5.jpg" alt="" width="100%" height="100%"></div>
+            <div class="swiper-slide"><img src="__MOBILE__/img/3.png" alt="" width="100%" height="100%"></div>
+            <div class="swiper-slide"><img src="__MOBILE__/img/4.png" alt="" width="100%" height="100%"></div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="inBg"></div>
+    <div class="header">
+        <div class="container content">
+            <span>当季报名</span>
+        </div>
+    </div>
+    <div class="quarterly clearfix">
+        <?php $count=1;?>
+        {clt:list db='type' id='vo' where="is_open = 1" order="listorder asc,createtime desc" limit='10'}
+         
+        <div {if condition="$count%2 eq 0 "}class="float-L" {else/}class="float-R" {/if}>
+            <a readonly href="{:url('information',['id'=>$vo['id']])}">
+                <img src="/public{$vo['thumb']}" alt="{$vo['title']}" width="100%" height="100%">
+                <span>{$vo['title']}</span>
+            </a>
+        </div>
+        <?php $count++;?>
+        {/clt:list}
+<!--        <div class="float-">
+            <a readonly href="{:url('information')}">
+                <img src="__MOBILE__/img/4.png" alt="" width="100%" height="100%">
+                <span>古筝报名</span>
+            </a>
+        </div>-->
+    </div>
+{/block}
+
+    {block name="js"}
+    <script src="__MOBILE__/js/swiper-3.4.2.jquery.min.js"></script>
+    
+
+    <script>
+        $(document).ready(function () {
+
+
+        });
+        (function () {
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                paginationType : "bullets",
+                pagination : '.swiper-pagination',
+                paginationHide:false,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }
+
+            });
+        })();
+    </script>
+   {/block}
+{/extend}

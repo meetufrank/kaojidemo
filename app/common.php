@@ -1,4 +1,12 @@
 <?php
+
+//将日期中的年月日字符替换成$str
+function replacedate($string,$str=''){
+    $string=str_replace("年",$str,$string);
+    $string=str_replace("月",$str,$string);
+    $string=str_replace("日",'',$string);
+    return $string;
+}
 // 应用公共文件
 function sysmd5($str,$type='sha1'){
     $sysConfig = F('sys.config');
@@ -84,7 +92,7 @@ function savecache($name = '',$id='') {
         $data = array ();
         foreach ( $list as $key => $val ) {
             $data [$val [$pkid]] = $val;
-        };
+        }
         F($name,$data);
     }
     return true;
@@ -155,24 +163,6 @@ function toCity($id){
 }
 function template_file($module=''){
     $tempfiles = dir_list(APP_PATH.'home/view/','html');
-    foreach ($tempfiles as $key=>$file){
-        $dirname = basename($file);
-        if($module){
-            if(strstr($dirname,$module.'_')) {
-                $arr[$key]['value'] =  substr($dirname,0,strrpos($dirname, '.'));
-                $arr[$key]['filename'] = $dirname;
-                $arr[$key]['filepath'] = $file;
-            }
-        }else{
-            $arr[$key]['value'] = substr($dirname,0,strrpos($dirname, '.'));
-            $arr[$key]['filename'] = $dirname;
-            $arr[$key]['filepath'] = $file;
-        }
-    }
-    return  $arr;
-}
-function atemplate_file($module=''){
-    $tempfiles = dir_list(APP_PATH.'admin/view/','html');
     foreach ($tempfiles as $key=>$file){
         $dirname = basename($file);
         if($module){
@@ -643,10 +633,5 @@ function send_email($to,$subject='',$content=''){
     $mail->Subject = $subject;
     //HTML内容转换
     $mail->msgHTML($content);
-    //Replace the plain text body with one created manually
-    //$mail->AltBody = 'This is a plain-text message body';
-    //添加附件
-    //$mail->addAttachment('images/phpmailer_mini.png');
-    //send the message, check for errors
     return $mail->send();
 }

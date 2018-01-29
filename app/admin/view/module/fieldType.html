@@ -97,6 +97,57 @@
 </table>
 
 {/case}
+{case value="select_db"}
+<table class="typeTable" cellpadding="2" cellspacing="1" width="100%">
+    <tr>
+		<td>选项类型</td>
+		<td>
+			<input type="radio" name="setup[multiple]" value="0" title="下拉框" {if condition="$multiple==0"} checked{/if}>
+			<input type="radio" name="setup[multiple]" value="1" title="多选列表框" {if condition="$multiple==1"} checked{/if}>
+		</td>
+    </tr>
+    <tr>
+        <td>表名</td>
+        <td> <input type="text" class="layui-input input-text" size="50"  name="setup[db]"  placeholder="必填：表名,不包含表前缀" value="{$db}" lay-verify="required" /></td>
+    </tr>
+    <tr>
+        <td>选项名称字段名</td>
+        <td> <input type="text" class="layui-input input-text" lay-verify="required" size="50"  placeholder="必填：选项名称字段名"  name="setup[name]" value="{$name}" /></td>
+    </tr>
+    <tr>
+        <td>值的字段名</td>
+        <td> <input type="text" class="layui-input input-text" lay-verify="required"   placeholder="必填：值的字段名"  size="50"  name="setup[value]" value="{$value}" /></td>
+    </tr>
+    <tr>
+        <td>查询条件(json格式)</td>
+        <td> <input type="text" class="layui-input input-text"   placeholder="选填：查询条件"    name="setup[where]" value="{$where}" /></td>
+    </tr>
+    <tr>
+        <td>字段类型</td>
+        <td>
+            <select name="setup[fieldtype]" onchange="javascript:numbertype(this.value);">
+                <option value="varchar" <?php if($fieldtype=='varchar') echo 'selected';?>>字符 VARCHAR</option>
+		<option value="tinyint" <?php if($fieldtype=='tinyint') echo 'selected';?>>整数 TINYINT(3)</option>
+		<option value="smallint" <?php if($fieldtype=='smallint') echo 'selected';?>>整数 SMALLINT(5)</option>
+		<option value="mediumint" <?php if($fieldtype=='mediumint') echo 'selected';?>>整数 MEDIUMINT(8)</option>
+		<option value="int" <?php if($fieldtype=='int') echo 'selected';?>>整数 INT(10)</option>
+            </select>
+        <span style="display:none;"  >
+				<input type="checkbox" name = "setup[numbertype]" value="{$numbertype}" checked  title="不包括负数"/>
+			</span>
+        </td>
+    </tr>
+    <tr>
+        <td>可见选项的数目</td>
+        <td><input type="text" class="input-text layui-input" size="5" name="setup[size]" value="{$size}" /></td>
+    </tr>
+    <tr>
+        <td>默认值</td>
+        <td> <input type="text" class="input-text layui-input" size="5"  name="setup[default]" value="{$default}" /></td>
+    </tr>
+</table>
+
+{/case}
 {case value="editor"}
 <table cellpadding="2" cellspacing="1" width="100%">
 	<tr>
@@ -160,7 +211,7 @@
 				<option value="smallint" <?php if($fieldtype=='smallint') echo 'selected';?>>整数 SMALLINT(5)</option>
 			</select>
 			<span style="display:none;"  >
-				<input type="checkbox" name = "setup[numbertype]" value="1" checked title="不包括负数" />
+				<input type="checkbox" name = "setup[numbertype]" value="{$numbertype}" checked title="不包括负数" />
 			</span>
 		</td>
 	</tr>
@@ -235,6 +286,46 @@
 			<input type="text" class="input-text layui-input" size="5"  name="setup[default]" value="{$default}" />
 		</td>
 	</tr>
+</table>
+{/case}
+{case value="checkbox_db"}
+<table cellpadding="2" cellspacing="1" width="100%">
+	
+    <tr>
+        <td>表名</td>
+        <td> <input type="text" class="layui-input input-text" size="50"  name="setup[db]"  placeholder="必填：表名,不包含表前缀" value="{$db}" lay-verify="required" /></td>
+    </tr>
+    <tr>
+        <td>选项名称字段名</td>
+        <td> <input type="text" class="layui-input input-text" lay-verify="required" size="50"  placeholder="必填：选项名称字段名"  name="setup[name]" value="{$name}" /></td>
+    </tr>
+    <tr>
+        <td>值的字段名</td>
+        <td> <input type="text" class="layui-input input-text" lay-verify="required"   placeholder="必填：值的字段名"  size="50"  name="setup[value]" value="{$value}" /></td>
+    </tr>
+    <tr>
+        <td>查询条件(json格式)</td>
+        <td> <input type="text" class="layui-input input-text"   placeholder="选填：查询条件"    name="setup[where]" value="{$where}" /></td>
+    </tr>
+    <tr>
+        <td>字段类型</td>
+        <td>
+            <select name="setup[fieldtype]" onchange="javascript:numbertype(this.value);">
+                <option value="varchar" <?php if($fieldtype=='varchar') echo 'selected';?>>字符 VARCHAR</option>
+		<option value="tinyint" <?php if($fieldtype=='tinyint') echo 'selected';?>>整数 TINYINT(3)</option>
+		<option value="smallint" <?php if($fieldtype=='smallint') echo 'selected';?>>整数 SMALLINT(5)</option>
+		<option value="mediumint" <?php if($fieldtype=='mediumint') echo 'selected';?>>整数 MEDIUMINT(8)</option>
+		<option value="int" <?php if($fieldtype=='int') echo 'selected';?>>整数 INT(10)</option>
+            </select>
+        <span style="display:none;"  >
+				<input type="checkbox" name = "setup[numbertype]" value="{$numbertype}" checked  title="不包括负数"/>
+			</span>
+        </td>
+    </tr>
+    <tr>
+        <td>默认值</td>
+        <td> <input type="text" class="input-text layui-input" size="5"  name="setup[default]" value="{$default}" /></td>
+    </tr>
 </table>
 {/case}
 {case value="number"}

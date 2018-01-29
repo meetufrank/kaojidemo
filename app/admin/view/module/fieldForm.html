@@ -16,8 +16,10 @@
                     <option value="textarea" >多行文本</option>
                     <option value="editor" >编辑器</option>
                     <option value="select" >下拉列表</option>
+                    <option value="select_db" >下拉列表(关联表)</option>
                     <option value="radio" >单选按钮</option>
                     <option value="checkbox" >复选框</option>
+                    <option value="checkbox_db" >复选框(关联表)</option>
                     <option value="image" >单张图片</option>
                     <option value="images" >多张图片</option>
                     <option value="file" >文件上传</option>
@@ -109,8 +111,10 @@
             form.on('select(type)', function(type){
                 field_setting(type,'add',form);
             });
+           
             form.on('submit(submit)', function (data) {
                 var loading = layer.load(1, {shade: [0.1, '#fff']});
+                layer.close(loading);
                 data.field.moduleid = "{$moduleid}";
                 if($scope.field.id){
                     data.field.oldfield = oldfield;
@@ -136,7 +140,7 @@
             var url =  "{:url('fieldAdd')}?isajax=1&moduleid={$moduleid}&type="+type.value;
         }else{
             var data = info.setup;
-            var url =  "{:url('fieldAdd')}?isajax=1&moduleid={$moduleid}&type="+info.type+"&name="+info.field;
+            var url =  "{:url('fieldAdd')}?isajax=1&moduleid={$moduleid}&type="+info.type+"&fname="+info.field;
         }
         $.ajax({
             type: "POST",

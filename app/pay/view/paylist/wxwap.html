@@ -15,7 +15,7 @@
 				 WeixinJSBridge.log(res.err_msg);
 				// alert(res.err_code+res.err_desc+res.err_msg);
 				if (res.err_msg == "get_brand_wcpay_request:ok") {
-                    window.location.href="{:url('Paylist/success')}";
+                    window.location.href="{:url('mobile/user/userorder')}";
 
                 }else if (res.err_msg == "get_brand_wcpay_request:cancel")  {
                      alert("支付过程中用户取消");
@@ -41,7 +41,7 @@
 		}
 	}
 
-
+callpay();
 	</script>
 	<!-- <script type="text/javascript">
 	//获取共享地址
@@ -77,11 +77,11 @@
 
 	</script> -->
 </head>
-<body>
+<!--<body>
      <br/>
     <font color="#9ACD32"><b>该笔订单支付金额为<span style="color:#f00;font-size:50px">1分</span>钱</b></font><br/><br/>
 	<div align="center">
 		<button style="width:210px; height:50px; border-radius: 15px;background-color:#FE6714; border:0px #FE6714 solid; cursor: pointer;  color:white;  font-size:16px;" type="button" onclick="callpay()" >立即支付</button>
 	</div>
-</body>
+</body>-->
 </html>

@@ -344,6 +344,7 @@
     }
 
     function save(){
+        alert(1111);
         var type = $("input[type='radio'][name='type']:checked").val();
         var media_id = $("#media_id").val();
         if(!media_id){
@@ -446,7 +447,7 @@
         var html = '';
         html += '<div class="media-body js-action" onmouseover="show(this)" onmouseout="hide(this)" onclick="edit(this, '+num+')">';
         html += '<p class="type3-title-'+num+'">标题</p><div class="media-body-div"><img class="type3-img-'+num+'" src="" style="max-width:62px;max-height:62px;display:none;"><span class="img-text">缩略图</span></div>';
-        html += '<div class="actions"><span class="edit">编辑</span><span class="del" onclick="removeMedia(this)">删除</span></div>';
+        html += '<div class="actions"><span class="edit">编辑</span><span class="del" id="removeMedia1">删除</span></div>';
         html += '<span class="editting">编辑中</span>';
         html += '<input type="hidden" name="hidden'+num+'" id="title'+num+'">';
         html += '<input type="hidden" name="hidden'+num+'" id="author'+num+'">';
@@ -505,8 +506,7 @@
     //图文详情项删除
     function deleteWeixinMediaDetail(id){
         $( "#dialog" ).dialog({
-            buttons: {
-                "确定,#e57373": function() {
+            buttons: {"确定,#e57373": function() {
                     $(this).dialog('close');
                     $.ajax({
                         type : "post",
@@ -526,7 +526,7 @@
                     return 0;
                 }
             },
-            contentText:"确定要删除吗",
+            contentText:"确定要删除吗"
         });
     }
 
@@ -544,9 +544,6 @@
     }
     function hide(event) {
         $(event).children('.actions').hide();
-    }
-    function removeMedia(event){
-        $(event).parents(".media-body").remove();
     }
     function showMessage(type, message,url,time){
         if(url == undefined){
@@ -582,6 +579,10 @@
             });
         }
     }
+    $('body').on('click','#removeMedia',function(event){
+        $(this).parents(".media-body").remove();
+        event.stopPropagation();
+    })
 </script>
 {include file="common/foot"/}
 </body>

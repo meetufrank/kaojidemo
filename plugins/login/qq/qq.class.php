@@ -76,7 +76,7 @@ class qq extends Model{
 				'openid'=>$openid,//用户号
 				'oauth'=>'qq',
 				'sex'=>$userInfo['gender']=='男'?1:($userInfo['gender']=='女'?2:''),
-				'nickname'=>$userInfo['nickname'],
+				'username'=>$userInfo['nickname'],
 				'avatar'=>$userInfo['figureurl_2']
 			);
 		}else{

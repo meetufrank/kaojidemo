@@ -239,10 +239,14 @@ class Module extends Common
             if(input('isajax')) {
                 $this->assign(input('get.'));
                 $this->assign(input('post.'));
-                $name = db('module')->where(array('id' => input('moduleid')))->value('name');
-                if (input('name')) {
-                    $files = Db::getTableInfo(config('database.prefix') . $name);
-                    $fieldtype = $files['type'][input('name')];
+//                $name = db('module')->where(array('id' => input('moduleid')))->value('name');
+                if (input('fname')) {
+                    $setup=db('field')->where(['moduleid'=>input('moduleid'),'field'=>input('fname')])->value('setup');
+//                    $files = Db::getTableInfo(config('database.prefix') . $name);
+//                    $fieldtype = $files['type'][input('fname')]; 
+                    $setup=string2array($setup);
+                    
+                    $fieldtype=$setup['fieldtype'];
                     $this->assign('fieldtype', $fieldtype);
                     return view('fieldType');
                 } else {
@@ -262,11 +266,12 @@ class Module extends Common
                     }
                 }
                 if($ishave) {
-                    $result['msg'] = '字段名已近存在！';
+                    $result['msg'] = '字段名已经存在！';
                     $result['code'] = 0;
                     return $result;
                 }
                 $addfieldsql =$this->get_tablesql($data,'add');
+              
                 if($data['setup']) {
                     $data['setup'] = array2string($data['setup']);
                 }
@@ -415,7 +420,7 @@ class Module extends Common
         $maxlength = intval($info['maxlength']);
         $minlength = intval($info['minlength']);
         $numbertype = $info['setup']['numbertype'];
-        $oldfield = $info['oldfield'];
+        $oldfield = $info['oldfield'];;
         if($do=='add'){
             $do = ' ADD ';
         }else{
@@ -486,7 +491,7 @@ class Module extends Common
 
             case 'mediumint':
                 $default = intval($default);
-                $sql = "ALTER TABLE `$tablename` $do `$field` INT ".($numbertype ==1 ? 'UNSIGNED' : '')." NOT NULL DEFAULT '$default'";
+                $sql = "ALTER TABLE `$tablename` $do `$field` MEDIUMINT ".($numbertype ==1 ? 'UNSIGNED' : '')." NOT NULL DEFAULT '$default'";
                 break;
 
             case 'mediumtext':

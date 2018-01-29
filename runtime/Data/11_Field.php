@@ -1,26 +1,5 @@
 <?php
 return array (
-  'catid' => 
-  array (
-    'id' => 114,
-    'moduleid' => 11,
-    'field' => 'catid',
-    'name' => '类型归属',
-    'tips' => '',
-    'required' => 1,
-    'minlength' => 0,
-    'maxlength' => 0,
-    'pattern' => 'number',
-    'errormsg' => '类型归属选择错误',
-    'class' => 'catid',
-    'type' => 'catid',
-    'setup' => '',
-    'ispost' => 0,
-    'unpostgroup' => '',
-    'listorder' => 0,
-    'status' => 1,
-    'issystem' => 0,
-  ),
   'title' => 
   array (
     'id' => 109,
@@ -44,34 +23,6 @@ return array (
     'listorder' => 1,
     'status' => 1,
     'issystem' => 1,
-  ),
-  'kj_options' => 
-  array (
-    'id' => 121,
-    'moduleid' => 11,
-    'field' => 'kj_options',
-    'name' => '乐器分级',
-    'tips' => '',
-    'required' => 1,
-    'minlength' => 0,
-    'maxlength' => 0,
-    'pattern' => 'defaul',
-    'errormsg' => '',
-    'class' => 'kj_options',
-    'type' => 'checkbox',
-    'setup' => 'array (
-  \'options\' => \'一级|1
-二级|2
-演奏级|3\',
-  \'fieldtype\' => \'varchar\',
-  \'numbertype\' => \'1\',
-  \'default\' => \'\',
-)',
-    'ispost' => 0,
-    'unpostgroup' => '',
-    'listorder' => 1,
-    'status' => 1,
-    'issystem' => 0,
   ),
   'hits' => 
   array (
@@ -120,6 +71,33 @@ return array (
     'status' => 1,
     'issystem' => 1,
   ),
+  'is_open' => 
+  array (
+    'id' => 230,
+    'moduleid' => 11,
+    'field' => 'is_open',
+    'name' => '是否开启',
+    'tips' => '',
+    'required' => 1,
+    'minlength' => 0,
+    'maxlength' => 0,
+    'pattern' => 'defaul',
+    'errormsg' => '',
+    'class' => 'is_open',
+    'type' => 'radio',
+    'setup' => 'array (
+  \'options\' => \'开启|1
+禁用|0\',
+  \'fieldtype\' => \'varchar\',
+  \'numbertype\' => \'1\',
+  \'default\' => \'\',
+)',
+    'ispost' => 0,
+    'unpostgroup' => '',
+    'listorder' => 98,
+    'status' => 1,
+    'issystem' => 0,
+  ),
   'status' => 
   array (
     'id' => 113,
@@ -130,16 +108,15 @@ return array (
     'required' => 0,
     'minlength' => 0,
     'maxlength' => 0,
-    'pattern' => '',
+    'pattern' => 'defaul',
     'errormsg' => '',
-    'class' => '',
+    'class' => 'status',
     'type' => 'radio',
     'setup' => 'array (
   \'options\' => \'发布|1
 定时发布|0\',
   \'fieldtype\' => \'tinyint\',
   \'numbertype\' => \'1\',
-  \'labelwidth\' => \'75\',
   \'default\' => \'1\',
 )',
     'ispost' => 1,

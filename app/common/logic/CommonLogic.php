@@ -11,5 +11,7 @@ class CommonLogic extends Logic {
         $replace = array("","","","","");
         return str_replace($search, $replace, $str);
     }
+    
+    
 
 }

@@ -12,4 +12,6 @@ class Index extends Common{
         $this->assign('title','会员中心');
         return $this->fetch();
     }
+    
+  
 }

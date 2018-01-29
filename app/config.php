@@ -59,11 +59,11 @@ return [
     // +----------------------------------------------------------------------
 
     // 默认模块名
-    'default_module'         => 'home',
+    'default_module'         => 'mobile',
     // 禁止访问模块
     'deny_module_list'       => ['common'],
     // 默认控制器名
-    'default_controller'     => 'Index',
+    'default_controller'     => 'bsbm',
     // 默认操作名
     'default_action'         => 'index',
     // 默认验证器
@@ -151,6 +151,7 @@ return [
         '__UPLOAD__' =>__PUBLIC__.'/uploads',
         '__ADMIN__'    => __PUBLIC__.'/static/admin',
         '__HOME__'     => __PUBLIC__.'/static/home',
+        '__MOBILE__'     => __PUBLIC__.'/static/mobile'
     ],
     // 默认跳转页面对应的模板文件
     'dispatch_success_tmpl'  => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',

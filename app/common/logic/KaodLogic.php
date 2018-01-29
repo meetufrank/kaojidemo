@@ -22,4 +22,6 @@ class KaodLogic extends Logic {
         
         return $data;
     }
+    
+  
 }

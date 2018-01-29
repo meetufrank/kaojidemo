@@ -8,8 +8,7 @@ class Wechat extends Common{
     /**
      * 微信账户设置
      */
-    public function config()
-    {
+    public function config(){
         $info = db('wx_config')->where([ 'key' => 'SHOPWCHAT'])->field('value')->find();
         if (empty($info['value'])) {
             $info= array(
@@ -31,7 +30,7 @@ class Wechat extends Common{
         $url_top = substr($url, 7);
         // 去除链接的尾部index.php
         $url_top = str_replace('/index.php', '', $url_top);
-        $call_back_url = $domain_name.'/home/wchat/relateWeixin';
+        $call_back_url = $domain_name.'/wchat/wchat/relateWeixin';
         $this->assign("url", $url_top);
         $this->assign("call_back_url", $call_back_url);
         $this->assign('wchat_config', $wchat_config["value"]);
