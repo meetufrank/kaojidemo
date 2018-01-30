@@ -120,7 +120,7 @@
 					<div class="examinee-info g-width-common-info">曲目</div>
 					<div class="examinee-val g-width-common-val">
 						<!-- <textarea type="text" name="play" class=""  placeholder="请输入您要表演的曲目" data-foolish-msg="请输入正确的曲目"> -->
-							<textarea id="Ptextarea" name="sings" class="certificate input-text-font" data-foolish-msg="请输入正确的曲目">
+							<textarea id="Ptextarea" name="sings" value="{$bsdata['sings']}" class="certificate input-text-font" data-foolish-msg="请输入正确的曲目">
 
 
 							</textarea>
@@ -137,7 +137,7 @@
 	
 	</div>
 	<div class="order-footer">
-		<a href="gameAddress.html"><button class="order-btn-up">上一步</button></a>
+		<a href="javascript:history.back(-1);"><button class="order-btn-up">上一步</button></a>
 		<button class="order-btn-low">下一步</button>
 	</div>
         {/block}

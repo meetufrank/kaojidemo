@@ -141,13 +141,13 @@ class Bsbm extends Common{
                'costid'=>$costlist['costid'],
                'costtitle'=>$costlist['costtitle'],
                'videourl'=>$form['videourl'],
-               'sings'=>$form['sings'],
+               'sings'=>trim_array_element($form['sings']),
                'order_no'=>$out_trade_no,
                'createtime'=> time()
               ],
               'more'=>$costlist
            ];
-
+           
            $data=[
              'title'=>$costlist['gametitle'].'报名比赛订单',//标题
              'order_no'=>  $out_trade_no,
