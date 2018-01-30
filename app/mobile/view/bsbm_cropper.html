@@ -1,14 +1,21 @@
 {extend name="common/base"}
    {block name="style"}
      <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__MOBILE__/cropper/font-awesome.min.css">
+    <link rel="stylesheet" href="__MOBILE__/cropper/bootstrap.min.css">
     <link rel="stylesheet" href="__MOBILE__/css/cropper.css">
      <link rel="stylesheet" href="__MOBILE__/css/main.css">
    
    
 
     <style>
+        .container{
+            width:100%!important;;
+            margin:0 24px;
+            padding:0;
+        }
+        .row>div.col-xs-12{margin:auto;}
+        ..menu .container div{padding:0 15px;}
         .inBg{
 			height:60px;
 			line-height: 60px;
@@ -18,6 +25,7 @@
                 form{height:90%;}
         .menu .content{
             position: relative;
+            width:100%;
             height: 100%;
             overflow: hidden;
         }
@@ -30,7 +38,7 @@
         }
         .bottom div span{
             display:inline-block;
-            width:50%;
+            width:100%;
             float:left;
             height:100%;
             color:#333;
@@ -66,7 +74,10 @@
         .btn-group{margin:0 20px;}
         .btn.btn-success{display:inline-block;width:140px;height:60px;border:none;color:#000;background-color:#ddd;}
         .modal-footer .btn-default{background:#ddd;color:#000;font-size:34px;}
+        .modal{height:100%;}
         .close{font-size:30px;}
+        #footer>div{width:100%;}
+        #footer>div>span{width:100%;}
         @media (min-width: 576px){
             .modal-dialog {
                 max-width: 684px;
@@ -157,16 +168,16 @@
 <!--页面底部-->
 <div id="footer" class="bottom clearfix">
     <div><a href="javascript:history.back(-1);"><span class="on">上一步</span></a></div>
-    <div><a href=""><span class="active">下一步</span></a></div>
-</div>
+    <!-- <div><a href=""><span class="active">下一步</span></a></div>
+</div> -->
 
 {/block}
 
 <!-- Scripts -->
 {block name="js"}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-<script src="https://fengyuanchen.github.io/js/common.js"></script>
+<script src="__MOBILE__/cropper/popper.min.js"></script>
+<script src="__MOBILE__/cropper/bootstrap.min.js"></script>
+<script src="__MOBILE__/cropper/common.js"></script>
 <script src="__MOBILE__/js/cropper.js"></script>
 <script src="__MOBILE__/js/main.js?v=1.0"></script>
 <script>
