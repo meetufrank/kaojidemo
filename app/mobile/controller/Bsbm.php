@@ -122,7 +122,7 @@ class Bsbm extends Common{
            $bmdata=[
               'data'=>[
                'name'=>$form['name'], 
-               'userid'=>session('user.id'), 
+               'uid'=>session('user.id'), 
                'sex'=>$form['sex'], 
                'birthday'=> strtotime($form['date']), 
                'country'=>$form['country'], 

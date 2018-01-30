@@ -1,0 +1,45 @@
+{include file="common/head"/}
+<link rel="stylesheet" href="__STATIC__/plugins/spectrum/spectrum.css">
+<style>
+    .edui-editor{z-index: 1!important;}
+</style>
+<script>
+    var ADMIN = '__ADMIN__';
+    var UPURL = "{:url('UpFiles/upImages')}";
+    var PUBLIC = "__PUBLIC__";
+    var imgClassName,fileClassName;
+</script>
+{include file="common/foot"/}
+<script src="__STATIC__/common/js/jquery.2.1.1.min.js"></script>
+<script>
+    var edittext=new Array();
+</script>
+
+<div class="admin-main layui-anim layui-anim-upbit">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>{$title}</legend>
+    </fieldset>
+    <form class="layui-form" method="post">
+    {if condition="$info['id'] neq ''"}<input TYPE="hidden" name="id" value="{$info.id}">{/if}
+        {volist name="fields" id="r"}
+            {if condition="!empty($r['status'])"}
+                <div class="layui-form-item">
+                    <label class="layui-form-label">{$r.name}</label>
+                    <div class="layui-input-4" id="box_{$r['field']}">
+                        {$r,input($r['field'])|getform=$form,###}
+                    </div>
+                </div>
+            {/if}
+        {/volist}
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="button" class="layui-btn" lay-submit="" lay-filter="submit">{:lang('submit')}</button>
+                {if condition="MODULE_NAME eq 'page'"}
+                <a href="{:url('category/index')}" class="layui-btn layui-btn-primary">{:lang('back')}</a>
+                {else /}
+                <a href="{:url('index',['catid'=>input('catid')])}" class="layui-btn layui-btn-primary">{:lang('back')}</a>
+                {/if}
+            </div>
+        </div>
+    </form>
+</div>
