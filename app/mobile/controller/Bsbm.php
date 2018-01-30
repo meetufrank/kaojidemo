@@ -122,7 +122,7 @@ class Bsbm extends Common{
            $bmdata=[
               'data'=>[
                'name'=>$form['name'], 
-               'userid'=>session('user.id'), 
+               'uid'=>session('user.id'), 
                'sex'=>$form['sex'], 
                'birthday'=> strtotime($form['date']), 
                'country'=>$form['country'], 
@@ -140,6 +140,8 @@ class Bsbm extends Common{
                'school'=>$form['school'],
                'costid'=>$costlist['costid'],
                'costtitle'=>$costlist['costtitle'],
+               'videourl'=>$form['videourl'],
+               'sings'=>$form['sings'],
                'order_no'=>$out_trade_no,
                'createtime'=> time()
               ],
@@ -194,9 +196,10 @@ class Bsbm extends Common{
         return  $this->assignfetch();
        }
        
-      
+       
        
     }
+
     
     public function bsupload() {
          

@@ -21,7 +21,7 @@ class UploadLogic extends Logic {
         $file=file_put_contents($path, base64_decode($base_img));
        
          
-        return '/'.$path;
+        return '/public/'.$path;
     }
   
 }
