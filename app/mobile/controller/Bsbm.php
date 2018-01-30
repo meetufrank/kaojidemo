@@ -140,6 +140,8 @@ class Bsbm extends Common{
                'school'=>$form['school'],
                'costid'=>$costlist['costid'],
                'costtitle'=>$costlist['costtitle'],
+               'videourl'=>$form['videourl'],
+               'sings'=>$form['sings'],
                'order_no'=>$out_trade_no,
                'createtime'=> time()
               ],

@@ -59,7 +59,8 @@ class Gameenlist extends Common{
                 ->join(config('database.prefix').'region ci','y.city = ci.id','left')
                 ->join(config('database.prefix').'region d','y.district = d.id','left')
                 ->join(config('database.prefix').'idcard ic','y.cardid = ic.id','left')
-                ->field('y.*,c.name as countryname,n.name as nationname,p.name as porvincename,ci.name as cityname,d.name as districtname,ic.title as cardname ')
+                ->join(config('database.prefix').'pay_order po','y.order_no = po.order_no','left')
+                ->field('y.*,c.name as countryname,n.name as nationname,p.name as provincename,ci.name as cityname,d.name as districtname,ic.title as cardname,po.state as orderstate ')
                 ->where($map)
                 ->order($order)
                 ->paginate(array('list_rows'=>$pageSize,'page'=>$page))
@@ -80,37 +81,35 @@ class Gameenlist extends Common{
             return $this->fetch ('gameenlist/index');
         }
     }
-//设置乐器状态
-    public function usersState(){
-        $id=input('post.id');
-        $is_lock=input('post.is_open');
-        if($this->dao->where('id='.$id)->update(['is_open'=>$is_lock])!==false){
-            return ['status'=>1,'msg'=>'设置成功!'];
-        }else{
-            return ['status'=>0,'msg'=>'设置失败!'];
-        }
-    }
-        public function edit(){
+
+        public function content(){
         $id = input('id');
-        $request = Request::instance();
-        $controllerName = MODULE_NAME;
-        if($controllerName=='Page'){
-            $p = $this->dao->where('id',$id)->find();
-            if(empty($p)){
-                $data['id']=$id;
-                $data['title'] = $this->categorys[$id]['catname'];
-                $data['keywords'] = $this->categorys[$id]['keywords'];
-                $this->dao->insert($data);
-            }
-        }
-        $info = $this->dao->where('id',$id)->find();
-        $form=new Form($info);
+        $map=[
+            'y.id'=>$id
+        ];
+        $info = $this->dao
+                ->alias('y')
+                ->join(config('database.prefix').'country c','y.country = c.id','left')
+                ->join(config('database.prefix').'nation n','y.nation = n.id','left')
+                ->join(config('database.prefix').'region p','y.province = p.id','left')
+                ->join(config('database.prefix').'region ci','y.city = ci.id','left')
+                ->join(config('database.prefix').'region d','y.district = d.id','left')
+                ->join(config('database.prefix').'idcard ic','y.cardid = ic.id','left')
+                ->join(config('database.prefix').'pay_order po','y.order_no = po.order_no','left')
+                ->field('y.*,c.name as countryname,n.name as nationname,p.name as provincename,ci.name as cityname,d.name as districtname,ic.title as cardname,po.state as orderstate ')
+                ->where($map)
+                ->find();
+       
+        $info['createtime'] = date('Y-m-d H:i:s',$info['createtime']);
+        $info['birthday'] = date('Y-m-d ',$info['birthday']);
+        
+        
         $returnData['vo'] = $info;
         $returnData['form'] = $form;
         $this->assign ('info', $info );
-        $this->assign ( 'form', $form );
+     
         $this->assign ( 'title', '查看内容' );
-        return $this->fetch('gameenlist/edit');
+        return $this->fetch('gameenlist/content');
     }
 //    public function edit(){
 //        $id = input('id');

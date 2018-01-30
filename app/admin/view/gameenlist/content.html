@@ -2,6 +2,20 @@
 <link rel="stylesheet" href="__STATIC__/plugins/spectrum/spectrum.css">
 <style>
     .edui-editor{z-index: 1!important;}
+    .spanstyle{
+        float: left;
+        display: block;
+        padding: 9px 15px;
+
+        font-weight: 400;
+        text-align: left;
+    }
+
+.divcss5 img{
+    width:50%;
+    height:50%;
+} 
+    
 </style>
 <script>
     var ADMIN = '__ADMIN__';
@@ -20,25 +34,102 @@
         <legend>{$title}</legend>
     </fieldset>
     <form class="layui-form" method="post">
-    {if condition="$info['id'] neq ''"}<input TYPE="hidden" name="id" value="{$info.id}">{/if}
-        {volist name="fields" id="r"}
-            {if condition="!empty($r['status'])"}
-                <div class="layui-form-item">
-                    <label class="layui-form-label">{$r.name}</label>
-                    <div class="layui-input-4" id="box_{$r['field']}">
-                        {$r,input($r['field'])|getform=$form,###}
+    
+              <div class="layui-form-item">
+                    <label class="layui-form-label fontstyle">报名简述：</label>
+                    <div class="spanstyle" >
+                        {$info.costtitle}
                     </div>
                 </div>
-            {/if}
-        {/volist}
+              <div class="layui-form-item">
+                    <label class="layui-form-label fontstyle">姓名：</label>
+                    <div class="spanstyle" >
+                        {$info.name}
+                    </div>
+                </div>
+         <div class="layui-form-item">
+                    <label class="layui-form-label fontstyle">性别：</label>
+                    <div class="spanstyle" >
+                        {if condition="$info.sex eq 1"}
+                         男
+                        {else/}
+                        女
+                        {/if}
+                    </div>
+                </div>
+        <div class="layui-form-item">
+                    <label class="layui-form-label fontstyle">照片：</label>
+                    <div class="spanstyle divcss5"  >
+                        <img src="{$info.thumb}" />
+                    </div>
+                </div>
+             <div class="layui-form-item">
+                    <label class="layui-form-label fontstyle">出生日期：</label>
+                    <div class="spanstyle" >
+                        {$info.birthday}
+                    </div>
+                </div>
+        <div class="layui-form-item">
+                    <label class="layui-form-label fontstyle">手机号：</label>
+                    <div class="spanstyle" >
+                        {$info.tel}
+                    </div>
+                </div>
+        <div class="layui-form-item">
+                    <label class="layui-form-label fontstyle">邮箱：</label>
+                    <div class="spanstyle" >
+                        {$info.email}
+                    </div>
+                </div>
+        <div class="layui-form-item">
+                    <label class="layui-form-label fontstyle">国家：</label>
+                    <div class="spanstyle" >
+                        {$info.countryname}
+                    </div>
+                </div>
+         {if condition="$info.country eq 1"}
+        <div class="layui-form-item">
+                    <label class="layui-form-label fontstyle">民族：</label>
+                    <div class="spanstyle" >
+                        {$info.nationname}
+                    </div>
+                </div>
+           {/if}
+        <div class="layui-form-item">
+                    <label class="layui-form-label fontstyle">地址：</label>
+                    <div class="spanstyle" >
+                        {if condition="$info.country eq 1"}
+                        {$info.provincename}-{$info.cityname}-{$info.districtname}&nbsp;&nbsp;&nbsp;&nbsp;
+                        {/if}
+                        {$info.address}
+                    </div>
+                </div>
+        
+        
+        <div class="layui-form-item">
+                    <label class="layui-form-label fontstyle">邮编：</label>
+                    <div class="spanstyle" >
+                        {$info.zipcode}
+                    </div>
+                </div>
+       
+        <div class="layui-form-item">
+                    <label class="layui-form-label fontstyle">视频链接：</label>
+                    <div class="spanstyle" >
+                        {$info.videourl}
+                    </div>
+                </div>
+        <div class="layui-form-item">
+                    <label class="layui-form-label fontstyle">擅长曲目：</label>
+                    <div class="spanstyle" >
+                        {$info.sings}
+                    </div>
+                </div>
         <div class="layui-form-item">
             <div class="layui-input-block">
-                <button type="button" class="layui-btn" lay-submit="" lay-filter="submit">{:lang('submit')}</button>
-                {if condition="MODULE_NAME eq 'page'"}
-                <a href="{:url('category/index')}" class="layui-btn layui-btn-primary">{:lang('back')}</a>
-                {else /}
+                
                 <a href="{:url('index',['catid'=>input('catid')])}" class="layui-btn layui-btn-primary">{:lang('back')}</a>
-                {/if}
+                
             </div>
         </div>
     </form>
