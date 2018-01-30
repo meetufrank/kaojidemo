@@ -14,15 +14,34 @@
 			margin-left:0!important;
 		}
 		.prompt{
-			display: inline-block;
-			position:absolute;
-			top:90px;
-			left:0;
-			height:0;
 			font-size:22px;
 			color:red;
 		}
 		.gap-gap{height:60px;}
+		.examinee-val.g-width-common-val>input{
+			width:90%;
+		}
+		.examinee-val.g-width-common-val>span{
+			font-size:40px;
+		}
+		p{text-align: center;}
+		p>span{
+			display:inline-block;
+			font-size:24px;
+			border:1px solid #333;
+			margin:30px auto;
+			padding:5px 60px;
+		}
+		p>span.active{
+			background:rgb(58,54,51);
+			color:#fff;
+		}
+		textarea{
+			width:100%;
+			height:100%;
+			margin-top:30px;
+			
+		}
 	</style>
    {/block}
 	
@@ -44,7 +63,7 @@
 	</div>
 	<!-- 考级信息 -->
 	<div class="inBg"></div>
-	<div class="information">
+	<div class="information" style="border-bottom:none;">
 		<div class="examinee examinee-title border-bottom-solid">参赛信息</div>
 		<form id="form">
 			<div class="examinee border-bottom-solid">
@@ -87,18 +106,36 @@
 				</div>
 			</div>
 			<div class="examinee border-bottom-solid">
-				<span class="prompt">*请上传视频到腾讯视频中并把链接填写到上方输入框内</span>
 				<div class="examinee-info g-width-common-info">视频链接</div>
 				<div  class="examinee-val g-width-common-val" >
 					<input type="text" name="videourl" class="certificate input-text-font" value="{$bsdata['videourl']}" placeholder="请输入参赛视频链接" data-foolish-msg="请输入正确的参赛视频链接">
 				</div>
 				
 			</div>
-		 
+			<span class="prompt">*请上传视频到腾讯视频中并把链接填写到上方输入框内</span>
+			<div class="inBg"></div>
+
+			<div id="play" class="play" >
+				<div id="play_one" class="examinee border-bottom-solid"> 
+					<div class="examinee-info g-width-common-info">曲目</div>
+					<div class="examinee-val g-width-common-val">
+						<!-- <textarea type="text" name="play" class=""  placeholder="请输入您要表演的曲目" data-foolish-msg="请输入正确的曲目"> -->
+							<textarea id="Ptextarea" name="sings" class="certificate input-text-font" data-foolish-msg="请输入正确的曲目">
+
+
+							</textarea>
+					</div>
+				</div>
+				<!-- <p class="">
+					<span class="">增加</span>
+				</p> -->
+			</div>
+
+
+		
 		</form>
 	
 	</div>
-	<div style="height:200px;"></div>
 	<div class="order-footer">
 		<a href="gameAddress.html"><button class="order-btn-up">上一步</button></a>
 		<button class="order-btn-low">下一步</button>
@@ -109,10 +146,9 @@
 	<script src="__MOBILE__/mobile/layer.js"></script>
 	<script >
             
-            function getlevel(id){
-          		var current_province_id=id;
+function getlevel(id){
+	var current_province_id=id;
                   
-		
 		$.ajax({
 			url:"{:url('getLevel')}",
 			data:{yqid:current_province_id},
@@ -186,8 +222,13 @@
             		Piano_level:$("#yqid").val(),
                         Piano_level2:$("#levelid").val(),
                         Piano_level3:$("#teamid").val(),
+
 //            		music_class:$('input:radio[name="levelid"]:checked').val(),
-            		certificate:$('.certificate').val()
+            			certificate:$('.certificate').val(),
+            			Ptextarea:$("#Ptextarea").val()
+
+
+
         		}
         		console.log(requestData)
             	var valid = true;
@@ -219,6 +260,12 @@
 	            }
 
 
+	            if(valid && requestData.Ptextarea.replace(/(^\s+)|(\s+$)/g,"").length == '' ){
+	            		            	valid = false;
+	            	var tips = $('#Ptextarea').attr('data-foolish-msg');
+	            	$('#Ptextarea').focus();
+	            }
+
 	            function certificate(mobile){
 	            	
 	            		if((/^(?:http(?:s|):\/\/|)(?:(?:\w*?)\.|)(?:\w*?)\.(?:\w{2,4})(?:\?.*|\/.*|)$/ig).test(mobile)){
@@ -238,9 +285,47 @@
 		                });
 	            }
 
+
+
+	            
+
         });
 
-    	})
+    })
+
+		// $("p>span").click(function(){
+	 //            		alert('aa');
+	 //            		create();
+		// 	})
+
+		// function create(){
+	
+		// 			var examineediv = $("<div></div>");
+		// 			examineediv.addClass('examinee border-bottom-solid');
+		// 			$("#play_one").after(examineediv);
+
+		// 			var infodiv =$("<div>曲目</div>");
+		// 			//infodiv.innerHTML = "曲目";
+		// 			infodiv.addClass('examinee-info g-width-common-info');
+		// 			examineediv.append(infodiv);
+
+		// 			var valdiv = $("<div></div>");
+		// 			valdiv.addClass('examinee-val g-width-common-val');
+		// 			examineediv.append(valdiv);
+
+		// 			var inputdiv = $('<input data-foolish-msg="请输入正确的曲目"/>');
+		// 			inputdiv.addClass('certificate input-text-font');
+		// 			valdiv.append(inputdiv);
+
+		// 			var spandiv =$('<span>✖<span>');
+		// 			spandiv.addClass('inputSpan')
+		// 			inputdiv.after(spandiv);
+					
+		// 			spandiv.click(function(){
+		// 				examineediv.remove();
+		// 		});
+
+		// }
 function savedata(){
   $.ajax({
 			url:"{:url('savedata')}",
@@ -253,8 +338,11 @@ function savedata(){
 		}) 
 }
 
-       
-		
+ 
+
+
+     
+ 	
 	</script>
         {/block}
 
