@@ -75,9 +75,23 @@
 						<div class="order-info-val">{$info.name}</div>
                                                 {/clt:info}
 					</div>
+                                     {if condition="$od.order_type eq 3"}
+                                    <div class="order-info">
+						<div class="examinee-info">演奏类型</div>
+						<div class="order-info-val">{$od.order_data.more.yqtitle}</div>
+					</div>
+                                    <div class="order-info">
+						<div class="examinee-info">级别</div>
+						<div class="order-info-val">{$od.order_data.more.leveltitle}</div>
+					</div>
+                                    <div class="order-info">
+						<div class="examinee-info">组别</div>
+						<div class="order-info-val">{$od.order_data.more.teamtitle}</div>
+					</div>
+                                     {/if}
 					<div class="order-info">
 						<div class="examinee-info">姓名</div>
-						<div class="order-info-val">{$od.order_data.name}</div>
+						<div class="order-info-val">{$od.order_data.data.name}</div>
 					</div>
 					<div class="order-info">
 						<div class="examinee-info">提交时间</div>
@@ -118,9 +132,23 @@
 						<div class="order-info-val">{$info.name}</div>
                                                 {/clt:info}
 					</div>
+                                     {if condition="$od.order_type eq 3"}
+                                    <div class="order-info">
+						<div class="examinee-info">演奏类型</div>
+						<div class="order-info-val">{$od.order_data.more.yqtitle}</div>
+					</div>
+                                    <div class="order-info">
+						<div class="examinee-info">级别</div>
+						<div class="order-info-val">{$od.order_data.more.leveltitle}</div>
+					</div>
+                                    <div class="order-info">
+						<div class="examinee-info">组别</div>
+						<div class="order-info-val">{$od.order_data.more.teamtitle}</div>
+					</div>
+                                     {/if}
 					<div class="order-info">
 						<div class="examinee-info">姓名</div>
-						<div class="order-info-val">{$od.order_data.name}</div>
+						<div class="order-info-val">{$od.order_data.data.name}</div>
 					</div>
 					<div class="order-info">
 						<div class="examinee-info">提交时间</div>
@@ -160,9 +188,23 @@
 						<div class="order-info-val">{$info.name}</div>
                                                 {/clt:info}
 					</div>
+                                    {if condition="$od.order_type eq 3"}
+                                    <div class="order-info">
+						<div class="examinee-info">演奏类型</div>
+						<div class="order-info-val">{$od.order_data.more.yqtitle}</div>
+					</div>
+                                    <div class="order-info">
+						<div class="examinee-info">级别</div>
+						<div class="order-info-val">{$od.order_data.more.leveltitle}</div>
+					</div>
+                                    <div class="order-info">
+						<div class="examinee-info">组别</div>
+						<div class="order-info-val">{$od.order_data.more.teamtitle}</div>
+					</div>
+                                    {/if}
 					<div class="order-info">
 						<div class="examinee-info">姓名</div>
-						<div class="order-info-val">{$od.order_data.name}</div>
+						<div class="order-info-val">{$od.order_data.data.name}</div>
 					</div>
 					<div class="order-info">
 						<div class="examinee-info">提交时间</div>

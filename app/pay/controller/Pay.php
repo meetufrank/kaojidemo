@@ -61,7 +61,7 @@ class Pay extends Controller {
                 if(!empty($order_info['order_data'])){
                        $bmdata=json_decode(unserialize($order_info['order_data']),true);
                        if(is_array($bmdata)){
-                          db('gameenlist')->insert($bmdata); 
+                          db('gameenlist')->insert($bmdata['data']); 
                         
                        }
 

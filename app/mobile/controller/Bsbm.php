@@ -2,7 +2,7 @@
 namespace app\mobile\controller;
 
 use app\common\logic\KjLogic;
-
+use app\common\logic\UploadLogic;
 class Bsbm extends Common{
     public function _initialize(){
         parent::_initialize();
@@ -120,7 +120,7 @@ class Bsbm extends Common{
             * 整合报名数据
             */
            $bmdata=[
-              'bsid'=>$form['bsid'],
+              'data'=>[
                'name'=>$form['name'], 
                'userid'=>session('user.id'), 
                'sex'=>$form['sex'], 
@@ -128,15 +128,22 @@ class Bsbm extends Common{
                'country'=>$form['country'], 
                'nation'=>$form['ethnic'], 
                'tel'=>$form['tel'], 
+               'thumb'=>$form['bsthumb'],
+               'email'=>$form['email'],
                'province'=>$form['province'], 
                'city'=>$form['city'],
                'district'=>$form['district'],
                'address'=>$form['address'],
-               'zipcode'=>$form['email'],
-               'leveltitle'=>$costlist['leveltitle']?$costlist['leveltitle']:'',
-               'yqtitle'=>$costlist['yqtitle']?$costlist['yqtitle']:'',
-               'teamtitle'=>$costlist['teamtitle']?$costlist['teamtitle']:'',
+               'zipcode'=>$form['zipcode'],
+               'cardid'=>$form['cardid'],
+               'idtpl'=>$form['idtpl'],
+               'school'=>$form['school'],
+               'costid'=>$costlist['costid'],
+               'costtitle'=>$costlist['costtitle'],
                'order_no'=>$out_trade_no,
+               'createtime'=> time()
+              ],
+              'more'=>$costlist
            ];
 
            $data=[
@@ -164,6 +171,14 @@ class Bsbm extends Common{
     }
     
     
+        public function cropper(){
+        $this->form_title='上传头像';
+        $id= $this->getbslist();
+        
+        
+       return  $this->assignfetch();
+    }
+    
      public function project() {
         
         $this->form_title='参赛项目';
@@ -181,6 +196,19 @@ class Bsbm extends Common{
        
       
        
+    }
+    
+    public function bsupload() {
+         
+        if(input('post.data')){
+           
+            $path=UploadLogic::getInstance()->uploadphoto(input('post.data'));
+            $this->getkjdata(['bsthumb'=>$path?$path:'']);
+            return ['msg'=>'ok'];
+        }else{
+           return false;
+        }
+        
     }
  
     /*

@@ -24,6 +24,7 @@ class User extends Common{
                 if(!empty($value['order_data'])){
                     $order_data=json_decode(unserialize($value['order_data']),true);
                     if(!empty($order_data)){
+                        
                         $order[$key]['order_data']=$order_data;
                     }else{
                         $order[$key]['order_data']=[];
