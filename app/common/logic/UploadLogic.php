@@ -13,7 +13,7 @@ class UploadLogic extends Logic {
          
          
           
-           $path='uploads/photo/';
+           $path='public/uploads/photo/';
         $output_file = time().'.jpeg';
         $path = $path.$output_file;
         $base_img = str_replace('data:image/jpeg;base64,', '', $data);
@@ -21,7 +21,7 @@ class UploadLogic extends Logic {
         $file=file_put_contents($path, base64_decode($base_img));
        
          
-        return '/public/'.$path;
+        return '/'.$path;
     }
   
 }
