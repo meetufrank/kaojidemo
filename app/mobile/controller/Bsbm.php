@@ -194,9 +194,10 @@ class Bsbm extends Common{
         return  $this->assignfetch();
        }
        
-      
+       
        
     }
+
     
     public function bsupload() {
          
