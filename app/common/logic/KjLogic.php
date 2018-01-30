@@ -37,7 +37,7 @@ class KjLogic extends Logic {
          define('WHEREARR', json_encode($this->where));
     }
     /*
-     * 查询有效报考乐器数量
+     * 查询有效报考乐器数量(考试乐器)
      */
     public function yq_count() {
         $this->autoload();
@@ -72,6 +72,7 @@ class KjLogic extends Logic {
        $gameid='g';//比赛表
        $yqid='gy';//比赛乐器
        $teamid='gt';//参赛组
+       $levelid='gl';//科目等级
        $gamecost='gc';  //费用表
        $where=[
            0=>[
@@ -83,6 +84,8 @@ class KjLogic extends Logic {
                $teamid.'.status'=>1,
                $yqid.'.is_open'=>1,
                $yqid.'.status'=>1,
+               $levelid.'.is_open'=>1,
+               $levelid.'.status'=>1,
            ],
             1=>[
                $gamecost.'.is_open'=>1,
@@ -93,6 +96,8 @@ class KjLogic extends Logic {
                $teamid.'.createtime'=>['elt',time()],
                $yqid.'.is_open'=>1,
                $yqid.'.createtime'=>['elt',time()],
+               $levelid.'.is_open'=>1,
+               $levelid.'.createtime'=>['elt',time()]
            ]
        ];
        //加入额外条件
@@ -104,20 +109,23 @@ class KjLogic extends Logic {
              }
          }
          define('GEAMWHERE', json_encode($where));
-         $fieldstr=$gamecost.'.id as levelid,'
-                 .$gamecost.'.title as leveltitle,'
+         $fieldstr=$gamecost.'.id as costid,'
+                 .$gamecost.'.title as costtitle,'
                  .$gameid.'.id as gameid,'
                  .$gameid.'.title as gametitle,'
                  .$yqid.'.id as yqid,'
                  .$yqid.'.title as yqtitle,'
                  .$teamid.'.id as teamid,'
                  .$teamid.'.title as teamtitle,'
+                 .$levelid.'.id as levelid,'
+                 .$levelid.'.title as leveltitle,'
                  .$gamecost.'.cost as cost,'
                  .$gamecost.'.service_cost as service_cost';
          $list=db('gamecost')->alias($gamecost)
                 ->join(config('database.prefix').'game '.$gameid,$gamecost.'.gameid = '.$gameid.'.id','left')
                 ->join(config('database.prefix').'gameyq '.$yqid,$gamecost.'.yqid = '.$yqid.'.id','left')
                 ->join(config('database.prefix').'gameteam '.$teamid,$gamecost.'.teamid = '.$teamid.'.id','left')
+                ->join(config('database.prefix').'gamelevel '.$levelid,$gamecost.'.levelid = '.$levelid.'.id','left')
                 ->where(function($query){ $query->where(json_decode(GEAMWHERE,true)[0]);})
                 ->whereOr(function($query){ $query->where(json_decode(GEAMWHERE,true)[1]);})
                 ->field($fieldstr)
@@ -175,7 +183,7 @@ class KjLogic extends Logic {
    public function getorder($map=null) {
        
        $list=db('pay_order')
-               ->where($map)->select();
+               ->where($map)->order('state asc,addtime desc')->select();
        
        return $list;
    }

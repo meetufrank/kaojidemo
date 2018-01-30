@@ -68,7 +68,7 @@ class Gamecost extends Common{
             $rsult['rel'] = 1;
             return $rsult;
         }else{
-            return $this->fetch ('Gamecost/index');
+            return $this->fetch ('gamecost/index');
         }
     }
 //设置乐器状态
@@ -101,7 +101,7 @@ class Gamecost extends Common{
         $this->assign ('info', $info );
         $this->assign ( 'form', $form );
         $this->assign ( 'title', '编辑内容' );
-        return $this->fetch('Gamecost/edit');
+        return $this->fetch('gamecost/edit');
     }
     function update(){
         $request = Request::instance();
@@ -122,7 +122,19 @@ class Gamecost extends Common{
         if(isset($fields['updatetime'])) {
             $data['updatetime'] = time();
         }
-
+         if($fields['gameid']  && !empty($data['gameid'])){
+            $gamename=db('game')->where(['id'=>$data['gameid']])->value('title');
+        }
+        if($fields['yqid']  && !empty($data['yqid'])){
+            $yqname=db('gameyq')->where(['id'=>$data['yqid']])->value('title');
+        }
+        if($fields['levelid']  && !empty($data['levelid'])){
+            $levelname=db('gamelevel')->where(['id'=>$data['levelid']])->value('title');
+        }
+        if($fields['teamid']  && !empty($data['teamid'])){
+            $teamname=db('gameteam')->where(['id'=>$data['teamid']])->value('title');
+        }
+        $data['title']=$gamename.'|'.$yqname.'|'.$levelname.'|'.$teamname;
         $title_style ='';
         if (isset($data['style_color'])) {
             $title_style .= 'color:' . $data['style_color'].';';
@@ -232,7 +244,7 @@ class Gamecost extends Common{
         $form=new Form();
         $this->assign ( 'form', $form );
         $this->assign ( 'title', '添加内容' );
-        return $this->fetch('Gamecost/edit');
+        return $this->fetch('gamecost/edit');
     }
     public function insert(){
         $request = Request::instance();
@@ -243,6 +255,20 @@ class Gamecost extends Common{
         if(isset($data['code']) && $data['code']==0){
             return $data;
         }
+        if($fields['gameid']  && !empty($data['gameid'])){
+            $gamename=db('game')->where(['id'=>$data['gameid']])->value('title');
+        }
+        if($fields['yqid']  && !empty($data['yqid'])){
+            $yqname=db('gameyq')->where(['id'=>$data['yqid']])->value('title');
+        }
+        if($fields['levelid']  && !empty($data['levelid'])){
+            $levelname=db('gamelevel')->where(['id'=>$data['levelid']])->value('title');
+        }
+        if($fields['teamid']  && !empty($data['teamid'])){
+            $teamname=db('gameteam')->where(['id'=>$data['teamid']])->value('title');
+        }
+        $data['title']=$gamename.'|'.$yqname.'|'.$levelname.'|'.$teamname;
+
         if($fields['createtime']  && empty($data['createtime']) ){
             $data['createtime'] = time();
         }

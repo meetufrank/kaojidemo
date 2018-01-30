@@ -68,7 +68,7 @@ class Gameteam extends Common{
             $rsult['rel'] = 1;
             return $rsult;
         }else{
-            return $this->fetch ('Gameteam/index');
+            return $this->fetch ('gameteam/index');
         }
     }
 //设置乐器状态
@@ -101,7 +101,7 @@ class Gameteam extends Common{
         $this->assign ('info', $info );
         $this->assign ( 'form', $form );
         $this->assign ( 'title', '编辑内容' );
-        return $this->fetch('Gameteam/edit');
+        return $this->fetch('gameteam/edit');
     }
     function update(){
         $request = Request::instance();
@@ -232,7 +232,7 @@ class Gameteam extends Common{
         $form=new Form();
         $this->assign ( 'form', $form );
         $this->assign ( 'title', '添加内容' );
-        return $this->fetch('Gameteam/edit');
+        return $this->fetch('gameteam/edit');
     }
     public function insert(){
         $request = Request::instance();

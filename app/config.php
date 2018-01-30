@@ -261,7 +261,7 @@ return [
     //自定义配置
     'sys_name' =>'CLTPHP',
     //文件上传
-    'addwater'=>false,
+    'addwater'=>true,
     'watertext'=>'CLTPHP',
     'version'=>'5.5'
 ];

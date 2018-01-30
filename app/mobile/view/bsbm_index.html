@@ -12,6 +12,9 @@
     		text-align: center;
     		font-size:26px;
     	}
+         form .content .sex .sex-radio:nth-child(1){
+           margin-left:0;
+        }
     </style>
 
    {/block}
@@ -82,6 +85,14 @@
                     <input id="tel" class="bor" type="tel" name="tel" data-foolish-msg="请填写正确手机号" placeholder="请填写手机号" value="{$bsdata['tel']}">
                 </div>
             </div>
+            <div class="content clearfix">
+                <label class="formLabel float-L">邮箱</label>
+                <div class="formInput float-L">
+                    <input id="email" class="bor" type="email" name="email" data-foolish-msg="请输入正确的邮箱" placeholder="请填写邮箱" value="{$bsdata['email']}" >
+                </div>
+            </div>
+            
+            
         </form>
     </div>
     <div class="bottom">
@@ -102,8 +113,17 @@
     <script src="__MOBILE__/date/js/jquery-weui.js"></script>
 
     <script>
-
-
+isethnic();
+$("[name='country']").change(function(){
+		isethnic();
+	})
+        function isethnic(){
+            if($("[name='country']").val()!=1){
+                    $("[name='ethnic']").attr('disabled','disabled');
+                }else{
+                    $("[name='ethnic']").attr('disabled',false);
+                }
+        }
         $("#dateTime").datetimePicker({
             //  title: '自定义格式',
             yearSplit: '年',
@@ -132,7 +152,8 @@
                 dateTime : $("#dateTime").val(),
                 country : $("#country").val(),
                 ethnic :$("#ethnic").val(),
-                tel : $("#tel").val()
+                tel : $("#tel").val(),
+                email:$("#email").val()
             };
             
             if(valid && !name(requestData.name)){
@@ -156,7 +177,7 @@
 
 
             }
-            if(valid && requestData.ethnic <= 0){
+            if(valid && requestData.ethnic <= 0 && $("[name='country']").val()==1){
                 var valid = false;
                 var tips = $("#ethnic").attr("data-foolish-msg");
                 $("#ethnic").focus();
@@ -171,7 +192,13 @@
 
 
             }
+            if(valid && !email(requestData.email)){
+                valid = false;
+                var tips = $("#email").attr("data-foolish-msg");
+                $("#email").focus();
 
+
+                        }
             function name(mobile) {
                 if((/^[a-zA-Z\u4e00-\u9fa5]+$/).test(mobile)){
                     return true;
@@ -187,7 +214,13 @@
                     return false;
                 }
             }
-
+            function email(mobile){
+                if((/^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/.test(mobile))){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
 
             if(valid){
 
@@ -208,7 +241,7 @@ function savedata(){
 			dataType:'json',
 			type:'post',
 			success:function(re){
-				window.location.href='{:url(\'address\')}';
+				window.location.href='{:url(\'cropper\')}';
 			}
 		}) 
 }
