@@ -113,7 +113,7 @@ class Bsbm extends Common{
            $fwje = $costlist['service_cost']; //平台服务费
            $jg=round($wxje+$fwje,2);
            $out_trade_no = date('Ymd') . substr(implode(NULL, array_map('ord', str_split(substr(uniqid(), 7, 13), 1))), 0, 8); //订单号
-           $form['date']=replacedate($form['date'], '/');
+          
           
            
            /*
@@ -124,7 +124,7 @@ class Bsbm extends Common{
                'name'=>$form['name'], 
                'uid'=>session('user.id'), 
                'sex'=>$form['sex'], 
-               'birthday'=> strtotime($form['date']), 
+               'birthday'=> $form['date'], 
                'country'=>$form['country'], 
                'nation'=>$form['ethnic'], 
                'tel'=>$form['tel'], 
@@ -147,7 +147,12 @@ class Bsbm extends Common{
               ],
               'more'=>$costlist
            ];
-           
+           foreach ($bmdata['data'] as $key => $value) {
+               if(empty($value)){
+                  unset($bmdata['data'][$key]); 
+               }
+               
+           }
            $data=[
              'title'=>$costlist['gametitle'].'报名比赛订单',//标题
              'order_no'=>  $out_trade_no,
@@ -165,6 +170,7 @@ class Bsbm extends Common{
                if($result){
                    session('order_no',$out_trade_no);
                    session('bsdata',null);
+                   session('bsdata', json_encode(['bsid'=>$form['bsid']]));
                    $this->redirect(url('pay/paylist/index',['id'=>1]));  //微信浏览器支付
                }
            }else{

@@ -189,26 +189,26 @@
                 Area : $("[name='district']").val(),
                 address :$("#address").val(),
                 Zipcode : $("#Zipcode").val(),
-                Id:$("#Id").val(),
+                Id:$("[name='cardid']").val(),
                 IdTpl:$("#IdTpl").val(),
                 school:$("#school").val()
             };
           {if condition="$bsdata['country'] eq 1"} 
-            if(valid && requestData.province.length <= 0){
+            if(valid && requestData.province <= 0){
                 valid = false;
                 var tips = $("#province").attr("data-foolish-msg");
                 $("#province").focus();
 
 
             }
-            if(valid && requestData.city.length <= 0){
+            if(valid && requestData.city <= 0){
                 valid = false;
                 var tips = $("#city").attr("data-foolish-msg");
                 $("#city").focus();
 
 
             }
-            if(valid && requestData.Area.length <= 0){
+            if(valid && requestData.Area <= 0){
                 valid = false;
                 var tips = $("#district").attr("data-foolish-msg");
                 $("#district").focus();
@@ -231,8 +231,10 @@
 
 
             }
-            if(valid && requestData.Id.length <=0 ){
+            
+            if(valid && requestData.Id <=0 ){
                 valid = false;
+                
                 var tips = $("#Id").attr("data-foolish-msg");
                 $("#Id").focus();
 
