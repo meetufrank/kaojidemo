@@ -24,7 +24,7 @@ mkdir($new_file, 0700);
 $new_file = $new_file.time().".{$type}";
 if (file_put_contents($new_file, base64_decode(str_replace($result[1], '', $base64_image_content)))){
     
-return '/'.$path;
+return '/'.$new_file;
 }else{
     exit;
 }
