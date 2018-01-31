@@ -147,6 +147,9 @@ h5{font-size:2.4rem;}
               success:function(re){
                   
                   window.location.href="{:url('address')}";                  
+                 },
+                 error:function(re){
+                     alert('上传失败，请重新上传');
                  }
                });
     
