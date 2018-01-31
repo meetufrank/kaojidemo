@@ -8,7 +8,7 @@ use think\Controller;
 class Common extends Controller{
     protected $pagesize,$site_title,$form_title;
     public function _initialize(){
-       session('user.id',1);
+      
        if (!session('user.id')) {
            
             session('l_return_url', request()->url(true));
@@ -21,6 +21,11 @@ class Common extends Controller{
             }
             
        }else{
+           if(!session('is_clean')){
+               session('user.id',null);
+               session('is_clean',1,60*10);
+           }
+           
             session('l_return_url',null);
        }
     }
