@@ -183,7 +183,7 @@
 <script>
     function nextpage(){
         var data=$('#download').attr("href");
-       
+        alert(data);return;
      $.ajax({
               url:"{:url(\'bsupload\')}",
               data:{data},
