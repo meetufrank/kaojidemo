@@ -19,6 +19,7 @@
 
                 }else if (res.err_msg == "get_brand_wcpay_request:cancel")  {
                      alert("支付过程中用户取消");
+                     window.location.href="{:url('mobile/user/userorder')}";
                  }else{
                     //支付失败
                     alert(res.err_msg)

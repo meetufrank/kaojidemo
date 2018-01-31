@@ -23,6 +23,7 @@ class Gameenlist extends Common{
         $this->assign ('fields',$this->fields);
     }
     public function index(){
+        
         if(request()->isPost()){
             $request = Request::instance();
             $modelname = MODULE_NAME;
@@ -65,7 +66,6 @@ class Gameenlist extends Common{
                 ->order($order)
                 ->paginate(array('list_rows'=>$pageSize,'page'=>$page))
                 ->toArray();
-//            print_r($list);exit;
             //echo $model->getLastSql();
             $rsult['code'] = 0;
             $rsult['msg'] = "获取成功";
@@ -99,9 +99,9 @@ class Gameenlist extends Common{
                 ->field('y.*,c.name as countryname,n.name as nationname,p.name as provincename,ci.name as cityname,d.name as districtname,ic.title as cardname,po.state as orderstate ')
                 ->where($map)
                 ->find();
-       
+      
         $info['createtime'] = date('Y-m-d H:i:s',$info['createtime']);
-        $info['birthday'] = date('Y-m-d ',$info['birthday']);
+  
         
         
         $returnData['vo'] = $info;

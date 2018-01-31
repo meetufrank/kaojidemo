@@ -1,12 +1,6 @@
 <?php
 
-//将日期中的年月日字符替换成$str
-function replacedate($string,$str=''){
-    $string=str_replace("年",$str,$string);
-    $string=str_replace("月",$str,$string);
-    $string=str_replace("日",'',$string);
-    return $string;
-}
+
 // 应用公共文件
 function sysmd5($str,$type='sha1'){
     $sysConfig = F('sys.config');
