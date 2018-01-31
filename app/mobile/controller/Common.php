@@ -21,11 +21,7 @@ class Common extends Controller{
             }
             
        }else{
-           if(!session('is_clean')){
-               session('user.id',null);
-               session('is_clean',1,60*10);
-           }
-           
+          
             session('l_return_url',null);
        }
     }
