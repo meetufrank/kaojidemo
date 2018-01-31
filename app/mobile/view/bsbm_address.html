@@ -71,11 +71,25 @@
              <div class="content clearfix">
                 <label class="formLabel float-L">证件类型</label>
                 <div class="formInput float-L">
-                    <select id="Id" name="cardid" data-foolish-msg="请选择证件类型" >
+                    <select id="Id" name="cardid" data-foolish-msg="请选择证件类型"  disabled>
                         <option value="0"  >证件类型</option>
-                       {clt:list db='idcard' id='vo' where="" order="" limit='2'}
-                        <option value="{$vo['id']}" {if condition="$bsdata['cardid'] eq $vo['id']"}selected{/if} >{$vo['title']}</option>
-                        {/clt:list}
+                       
+                           {if condition="$bsdata['country'] eq 1 "}
+                                  {foreach name='cardlist'  item='cl'}
+                                     {if condition="$cl['id'] eq 1"}
+                                      <option value="{$cl['id']}" selected >{$cl['title']}</option>
+                                      {/if}
+                                 {/foreach}
+                           {else/}
+                                 {foreach name='cardlist'  item='cl'}
+                                     {if condition="$cl['id'] neq 1"}
+                                      <option value="{$vo['id']}" selected >{$vo['title']}</option>
+                                      {/if}
+                                  {/foreach}
+                           {/if}
+                           
+                        
+                        
                        
                     </select>
                 </div>

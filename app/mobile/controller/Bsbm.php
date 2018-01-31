@@ -74,6 +74,10 @@ class Bsbm extends Common{
       
         $province = db('Region')->where ( array('pid'=>1) )->select ();
         
+        //查询证件类型
+        //身份证
+        $cardlist=db('idcard')->select();
+        $this->assign('cardlist',$cardlist);
         $this->assign('province',$province);
         return $this->assignfetch();
     }
