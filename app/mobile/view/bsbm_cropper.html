@@ -143,6 +143,9 @@ body{
               success:function(re){
                   
                   window.location.href="{:url('address')}";                  
+                 },
+                 error:function(re){
+                     alert('上传失败，请重新上传');
                  }
                });
     
