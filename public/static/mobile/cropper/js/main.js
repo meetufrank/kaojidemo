@@ -36,7 +36,7 @@ $(function () {
         }
       };
   var originalImageURL = $image.attr('src');
-  var uploadedImageType = 'image/jpeg';
+  var uploadedImageType = 'image/png';
   var uploadedImageURL;
 
 

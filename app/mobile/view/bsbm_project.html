@@ -108,7 +108,7 @@
 			<div class="examinee border-bottom-solid">
 				<div class="examinee-info g-width-common-info">视频链接</div>
 				<div  class="examinee-val g-width-common-val" >
-					<input type="text" name="videourl" class="certificate input-text-font" value="{$bsdata['videourl']}" placeholder="请输入参赛视频链接" data-foolish-msg="请输入正确的参赛视频链接">
+					<input type="text" id="videourl" name="videourl" class="certificate input-text-font" value="{$bsdata['videourl']}" placeholder="请输入参赛视频链接" data-foolish-msg="请输入正确的参赛视频链接">
 				</div>
 				
 			</div>
@@ -224,7 +224,7 @@ function getlevel(id){
                         Piano_level3:$("#teamid").val(),
 
 //            		music_class:$('input:radio[name="levelid"]:checked').val(),
-            			certificate:$('.certificate').val(),
+            			certificate:$('#videourl').val(),
             			Ptextarea:$("#Ptextarea").val()
 
 
@@ -253,10 +253,10 @@ function getlevel(id){
 //	                $(".radio-btn").focus();
 //	            }
                   
-	            if(valid && !certificate(requestData.certificate)){
+	            if(valid && requestData.certificate.length<=0){
 	                valid = false;
-	                var tips = $(".certificate").attr("data-foolish-msg");
-	                $(".certificate").focus();
+	                var tips = $("#videourl").attr("data-foolish-msg");
+	                $("#videourl").focus();
 	            }
 
 
@@ -266,15 +266,15 @@ function getlevel(id){
 	            	$('#Ptextarea').focus();
 	            }
 
-	            function certificate(mobile){
-	            	
-	            		if((/^(?:http(?:s|):\/\/|)(?:(?:\w*?)\.|)(?:\w*?)\.(?:\w{2,4})(?:\?.*|\/.*|)$/ig).test(mobile)){
-	            			return true;
-	            		}else{
-	            			return false
-	            		}
-	            	
-	            }
+//	            function certificate(mobile){
+//	            	
+//	            		if((/^(?:http(?:s|):\/\/|)(?:(?:\w*?)\.|)(?:\w*?)\.(?:\w{2,4})(?:\?.*|\/.*|)$/ig).test(mobile)){
+//	            			return true;
+//	            		}else{
+//	            			return false
+//	            		}
+//	            	
+//	            }
 	            if(valid){
                     savedata();
 	            }else{

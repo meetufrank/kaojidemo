@@ -217,7 +217,7 @@ class Bsbm extends Common{
            
             $path=UploadLogic::getInstance()->uploadphoto(input('post.data'));
             $this->getkjdata(['bsthumb'=>$path?$path:'']);
-            return ['msg'=>'ok'];
+            return ['code'=>1,'msg'=>'ok'];
         }else{
            return false;
         }
