@@ -12,6 +12,13 @@ class UploadLogic extends Logic {
         // print_r($_POST['data']);exit;
        
           $base64_image_content = $data;
+          $size=file_get_contents($base64_image_content);
+          $size=strlen($size)/1024;
+          if($size>2048){
+              echo json(['code'=>0,'msg'=>'上传大小不可大于2m']);
+              exit;
+          }
+         
 //匹配出图片的格式
 if (preg_match('/^(data:\s*image\/(\w+);base64,)/', $base64_image_content, $result)){
 $type = $result[2];

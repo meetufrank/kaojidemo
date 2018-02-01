@@ -83,11 +83,11 @@
                            {else/}
                                  {foreach name='cardlist'  item='cl'}
                                      {if condition="$cl['id'] neq 1"}
-                                      <option value="{$vo['id']}" selected >{$vo['title']}</option>
+                                      <option value="{$cl['id']}" selected >{$cl['title']}</option>
                                       {/if}
                                   {/foreach}
+                        
                            {/if}
-                           
                         
                         
                        
@@ -309,7 +309,7 @@ function savedata(){
 			dataType:'json',
 			type:'post',
 			success:function(re){
-				window.location.href='{:url(\'address\')}';
+				window.location.href='{:url(\'cropper\')}';
 			}
 		}) 
 }

@@ -53,7 +53,7 @@ h5{font-size:2.4rem;}
 </style>
 {/block}
 
-{block name="content"}}
+{block name="content"}
   <div class="box">
   <!-- Content -->
   <div class="container my-center">
@@ -127,6 +127,7 @@ h5{font-size:2.4rem;}
   <!-- Scripts -->
  <script src="__MOBILE__/cropper/js/jquery.js"></script>
   <script src="__MOBILE__/cropper/js/popper.min.js"></script>
+  <script src="__MOBILE__/mobile/layer.js"></script>
   <script src="__MOBILE__/cropper/js/bootstrap-cropper.min.js"></script>
   <script src="__MOBILE__/cropper/js/common.js"></script>
   <script src="__MOBILE__/cropper/js/cropper.js"></script>
@@ -140,6 +141,10 @@ h5{font-size:2.4rem;}
    
     function nextpage(){
         var data=$('#download').attr("href");
+      var index = layer.open({
+          type: 2
+          ,content: '加载中'
+        });
 
      $.ajax({
               url:"{:url(\'bsupload\')}",
@@ -147,10 +152,16 @@ h5{font-size:2.4rem;}
               dataType:'json',
               type:'post',
               success:function(re){
-                  
-                  window.location.href="{:url('project')}";                  
+                layer.close(layer.index);
+                  if(re.code==1){
+                      window.location.href="{:url('project')}"; 
+                  }else{
+                      alert(re.msg);
+                  }
+                                   
                  },
                  error:function(re){
+                    layer.close(layer.index);
                      alert('上传失败，请重新上传');
                  }
                });
